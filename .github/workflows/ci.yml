@@ -12,4 +12,4 @@ jobs:
           python-version: '3.12'
       - run: pip install -e '.[dev]'
       - run: python -m pytest
-      - run: python scripts/generate_validation_report.py
+      - run: python scripts/portfolio_validation.py

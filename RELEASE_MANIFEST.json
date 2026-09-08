@@ -42,7 +42,7 @@
     },
     {
       "path": "artifacts/portfolio_validation.json",
-      "sha256": "5c902dd11105a17bbcdeadd2d5daa9e24adf4471d4f49aa5f8a56549495b413e"
+      "sha256": "b31c3f80d2d0923a21949757d07dde6792059bf6575960ff2b2249eb6c088ff6"
     },
     {
       "path": "artifacts/governance_standard_validation.json",
