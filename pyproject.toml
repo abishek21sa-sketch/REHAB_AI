@@ -41,3 +41,6 @@ skip_covered = false
 
 [tool.setuptools.package-data]
 "rehab_ai.web" = ["frontend/*.html", "frontend/*.css", "frontend/*.js", "frontend/vendor/*.js", "sample_data/*.csv"]
+
+[tool.vercel]
+entrypoint = "src.rehab_ai.web:app"
