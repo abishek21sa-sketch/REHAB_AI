@@ -170,3 +170,10 @@ Set-ExecutionPolicy -Scope Process Bypass
 This release contains a structured public-data layer under `data/raw`, `data/processed`, `data/contracts`, `data/dictionaries`, `data/provenance`, and `data/snapshots`. Run `scripts\fetch_public_data_windows.ps1` when the primary public dataset is not bundled, then run `scripts\windows_real_data_acceptance.ps1`. `artifacts/data_backbone_status.json` records source state, row/feature counts, missingness, SHA-256, validation status, case-study state, claim boundary, model version, and the human decision authority.
 
 The public-data case is `Postural-Transition State-Confidence Progression Guard` and is wired into `MOTION-GUARD-v1` review. Missing external raw data never silently falls back to a real-data claim; the dossier explicitly enters `REFERENCE_MODE_HOLD_FOR_REAL_DATA_CLAIM`.
+## Deployment
+
+Deploy `src/rehab_ai/web/` as the Vercel project root. Its rewrite map serves
+the static Vue lab from `frontend/`, while `config.js` sends `/api/*` and
+`/health` calls to the Render service declared in the root `render.yaml`.
+Deploy the repository root as a Render Blueprint and verify `/health` before
+opening the Vercel lab.
