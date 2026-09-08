@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "checks": {
+    "gp_beats_mean_baseline": true,
+    "gp_interval_coverage_reasonable": true,
+    "phenotype_separation": true,
+    "apace_matches_exact_small_oracle": true,
+    "apace_reduces_response_uncertainty": true,
+    "apace_safe_trajectory": true,
+    "integrated_policy_feasible": true,
+    "external_validation_honest": true,
+    "hdf5_roundtrip": true
+  },
+  "gp_metrics": {
+    "test_mae": 0.00611350755364307,
+    "test_rmse": 0.007594637816984359,
+    "baseline_mae": 0.01738756540059309,
+    "coverage_95": 0.8666666666666667,
+    "n_train": 90,
+    "n_test": 30,
+    "validation_scope": "SYNTHETIC VALIDATION"
+  },
+  "phenotype_silhouette": 0.5885086189500489,
+  "apace_sequence": [
+    "B",
+    "B"
+  ],
+  "apace_score": -0.5013178401802472
+}

@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rehab-ai"
+version = "0.99.0"
+description = "Rehabilitation Decision Intelligence Platform"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "pydantic>=2.9",
+  "numpy>=2.0",
+  "scipy>=1.13",
+  "scikit-learn==1.8.0",
+  "PyYAML>=6.0",
+  "starlette>=0.40",
+  "uvicorn[standard]>=0.30",
+  "h5py>=3.12",
+  "duckdb>=1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "httpx>=0.27", "coverage>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.coverage.run]
+source = ["rehab_ai"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = false
+
+[tool.setuptools.package-data]
+"rehab_ai.web" = ["frontend/*.html", "frontend/*.css", "frontend/*.js", "frontend/vendor/*.js", "sample_data/*.csv"]

@@ -1,0 +1,17 @@
+{
+  "project": "REHAB AI",
+  "release": "REHAB_AI_ENTERPRISE_RC2",
+  "phase": "ENTERPRISE_OPERABILITY_AND_DECISION_ASSURANCE",
+  "result": "PASS",
+  "passed": 72,
+  "skipped": 0,
+  "failures": 0,
+  "errors": 0,
+  "scope": "Full current Python regression suite",
+  "junit_evidence": [
+    "docs/validation/junit/rehab_g1.xml",
+    "docs/validation/junit/rehab_g2a.xml",
+    "docs/validation/junit/rehab_g2b.xml"
+  ],
+  "test_environment_boundary": "Container evidence is a pre-release gate. Target Windows enterprise acceptance remains mandatory."
+}

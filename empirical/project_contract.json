@@ -1,0 +1,12 @@
+{
+  "local_evidence": "sample_data/observed_landmark_session.csv",
+  "entity_grain": "session / movement frame / biomechanical state",
+  "historical_intelligence": "movement-state, stability and progression chronology",
+  "decision": "rehabilitation progression / hold / assessment action",
+  "actor": "Rehabilitation Clinician",
+  "case_questions": [
+    "Which session / movement frame / biomechanical state shows the strongest empirical shift or evidence concentration?",
+    "Does the predictive + authored-algorithm + OR decision differ from the simple baseline for rehabilitation progression / hold / assessment action?",
+    "What evidence would cause the Rehabilitation Clinician to HOLD rather than approve?"
+  ]
+}

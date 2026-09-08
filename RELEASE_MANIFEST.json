@@ -1,0 +1,87 @@
+{
+  "project": "REHAB AI",
+  "release_stage": "PORTFOLIO_PUBLIC_DATA_RELEASE_CANDIDATE",
+  "platform": "Windows-first",
+  "workspaces": 32,
+  "original_algorithm": "MOTION-GUARD-v1",
+  "predictive_ml_family": "Gaussian hidden-state sequence learning (HMM)",
+  "decision_campaign": "Rehabilitation Episode Review Campaign",
+  "campaign_identity": "safety-margin volatility + progression stability frontier",
+  "data_mode": "offline_reference",
+  "empirical_promotion": "REFERENCE_ONLY",
+  "human_authority": "CLINICIAN_REVIEW",
+  "autonomous_execution": false,
+  "evidence_inventory": [
+    {
+      "path": "artifacts/tenx_validation.json",
+      "sha256": "a8396340cbe4ab1be653b5b56ad32d9cfff8e5132d7623f6da5427cfc11d7dfe"
+    },
+    {
+      "path": "artifacts/tenx_stress.json",
+      "sha256": "cfebda6cc4ef8bf56e71d4da8d61f99b7f8ef54740341be0b32166c58f3373c3"
+    },
+    {
+      "path": "artifacts/airlines15x_validation.json",
+      "sha256": "4dad17abe463fa5d724098ee58b3e3060a83639ef4c3ddf7b7f7b78ca81fde9d"
+    },
+    {
+      "path": "artifacts/final_depth_validation.json",
+      "sha256": "7460d455243a9bc256eec5ef40d0a888db1d3b86bab49352e8380f6de67f1dc7"
+    },
+    {
+      "path": "artifacts/intelligence_validation.json",
+      "sha256": "43ecb6126412c0fd8b62ea6ba1cc2a2b38ea0f15dcb0ebee1c2d415569df76ba"
+    },
+    {
+      "path": "artifacts/ui_identity_validation.json",
+      "sha256": "23f0e5eb5e8f34e73e969cf68a5b30d732298a5ad03496a6a706caae0958374c"
+    },
+    {
+      "path": "artifacts/frontend_diversity.json",
+      "sha256": "700d77fc065fd1fbae0aeb2cf237dcf38f13485937f4b35a21713373b4440dac"
+    },
+    {
+      "path": "artifacts/portfolio_validation.json",
+      "sha256": "5c902dd11105a17bbcdeadd2d5daa9e24adf4471d4f49aa5f8a56549495b413e"
+    },
+    {
+      "path": "artifacts/governance_standard_validation.json",
+      "sha256": "d4d2a216a82d99a0b9db1a93ada12912429eb149157746a729f99f9028f88556"
+    },
+    {
+      "path": "PROJECT_METADATA.json",
+      "sha256": "851e8d10e1c4534aa1133a1c5851575ff83b9f934ce22f1edea5907176c58134"
+    },
+    {
+      "path": "docs/FRONTEND_DEMO_FLOW.md",
+      "sha256": "b4fc8db52870d7df4ee0cdbd0d6f63369a8a0d64146638dd7966964530d36548"
+    },
+    {
+      "path": "artifacts/fortune50_capability_benchmark.json",
+      "sha256": "c8f442725cf629fcfc3930639bc549404f63b5f9ace9fd3d760e901e5c58936a"
+    },
+    {
+      "path": "artifacts/enterprise_hardening.json",
+      "sha256": "cfa96f1dcacd11240b9ea412b3f0e83332ccbdc77d4b79c870834de3a23820fd"
+    },
+    {
+      "path": "artifacts/frontend_demo_flow.json",
+      "sha256": "6ff36c35ddb139912f7ffd1c50d2ed6e330b78fee1061913d410b8710d140687"
+    },
+    {
+      "path": "src/rehab_ai/web/app.py",
+      "sha256": "2956dfffe7381287b789003f537f068a4d4fabb4ae953c3b5726240c8b800b59"
+    }
+  ],
+  "claim_boundary": "Portfolio-grade analytical validation. External/domain validation and native dependency acceptance remain required where explicitly marked; autonomous operational execution is disabled.",
+  "product_ui_identity": "human-motion biomechanics studio",
+  "ai_agent": "Rehabilitation Planning Agent",
+  "agent_decision_policy": "latent-state-gated progression planning",
+  "ml_lifecycle_endpoint": "/api/ml/lifecycle",
+  "agent_endpoint": "/api/agent/run",
+  "frontend_similarity_method": "5-token Jaccard after removing embedded workspace contract payload",
+  "max_pairwise_frontend_similarity": 0.1321,
+  "frontend_similarity_threshold": 0.2,
+  "data_backbone": "structured public data contracts + provenance + claim ledger + project-specific empirical case",
+  "claim_ledger": "data/provenance/CLAIM_LEDGER.md"
+}

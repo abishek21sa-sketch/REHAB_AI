@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "checks": {
+    "safe_envelope_beats_baseline": true,
+    "safe_envelope_conservative_coverage": true,
+    "temporal_ml_beats_persistence": true,
+    "periodic_signal_detected": true,
+    "spectral_entropy_orders_noise": true,
+    "joint_work_reference": true
+  },
+  "safe_envelope_metrics": {
+    "test_mae": 0.0332776593871835,
+    "baseline_mae": 0.14156718707913885,
+    "conservative_coverage": 0.9681818181818181,
+    "conformal_radius": 0.08008642972933283,
+    "validation_scope": "SYNTHETIC VALIDATION"
+  },
+  "temporal_recovery_metrics": {
+    "test_mae": 0.007363385927630549,
+    "test_rmse": 0.009359368220682625,
+    "persistence_mae": 0.014423776083230101,
+    "n_train_windows": 1350,
+    "n_test_windows": 450,
+    "validation_scope": "SYNTHETIC LONGITUDINAL VALIDATION"
+  },
+  "signal_quality": {
+    "periodic": {
+      "rms_acceleration": 0.7038729025104928,
+      "jerk_rms": 8.026328571861454,
+      "spectral_entropy": 0.12192443413446108,
+      "periodicity_index": 0.8730435260877413
+    },
+    "noise": {
+      "rms_acceleration": 1.0138990728716242,
+      "jerk_rms": 147.99490445887807,
+      "spectral_entropy": 0.9288074152877557,
+      "periodicity_index": 0.02376759300783154
+    }
+  },
+  "joint_energetics_reference": {
+    "positive_work_j": 10.0,
+    "negative_work_j": 0.0,
+    "net_work_j": 10.0,
+    "peak_abs_power_w": 10.0,
+    "mechanical_cost_j_per_kg": 0.14285714285714285
+  }
+}

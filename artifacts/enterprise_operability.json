@@ -1,0 +1,16 @@
+{
+  "certificate_sha256": "c8bbff052db15af6f911b6fef504355cd096232e7698bf01bd88039f331807a9",
+  "checks": {
+    "certificate_valid": true,
+    "false_clinical_validation_claim_forces_hold": true,
+    "modeled_safety_bound_within_threshold": true,
+    "reference_runtime_under_5s": true,
+    "tampering_detected": true,
+    "therapy_change_blocked": true
+  },
+  "claim_boundary": "Synthetic/model safety-envelope evidence only. This certificate is not clinical validation, medical advice, medical-device certification, or authorization to alter patient care.",
+  "decision_state": "CLINICAL_REVIEW_REQUIRED",
+  "phase": "ENTERPRISE_OPERABILITY_V1",
+  "runtime_seconds": 0.00039548699999159,
+  "status": "PASS"
+}

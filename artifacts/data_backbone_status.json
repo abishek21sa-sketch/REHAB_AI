@@ -1,0 +1,62 @@
+{
+  "autonomous_execution": false,
+  "case_study": {
+    "algorithm": "MOTION-GUARD-v1",
+    "clinical_boundary": "Movement/activity-state validation only; not clinical efficacy evidence.",
+    "decision_impact": "Observed movement-state separability becomes an evidence-readiness gate; low state confidence blocks progression before APACE/digital-twin escalation.",
+    "dominant_states": {
+      "1": 966,
+      "10": 51,
+      "11": 80,
+      "12": 49,
+      "2": 828,
+      "3": 762,
+      "4": 989,
+      "5": 1092,
+      "6": 1074,
+      "9": 55
+    },
+    "mean_state_separation_margin": 0.14445206746734787,
+    "motion_guard_state": "PROGRESSION_REVIEW_ALLOWED",
+    "name": "Postural-Transition State-Confidence Progression Guard",
+    "nearest_centroid_holdout_accuracy": 0.803921568627451,
+    "rows": 6000,
+    "state_target": "5",
+    "status": "ACTIVE"
+  },
+  "claim_boundary": "UCI motion data validates activity/postural-state inference only. It is not clinical-treatment evidence and does not establish clinical effectiveness.",
+  "current_model_version": "public-data-backbone-1.0",
+  "dataset": "UCI Smartphone-Based Recognition of Human Activities and Postural Transitions",
+  "dataset_state": "REFRESHED_EXTERNAL_ACTIVE",
+  "generated_at_utc": "2026-09-07T04:47:58.545713+00:00",
+  "human_authority": "CLINICIAN",
+  "layers": {
+    "contracts": "data/contracts",
+    "dictionaries": "data/dictionaries",
+    "processed": "data/processed",
+    "provenance": "data/provenance",
+    "raw": "data/raw",
+    "snapshots": "data/snapshots"
+  },
+  "primary_files": [
+    {
+      "bytes": 119567756,
+      "features": 561,
+      "missing_fraction": 0.0,
+      "path": "data\\raw\\uci_motion\\features.csv",
+      "rows": 10928,
+      "sha256": "3a0b5ce42cb732b84cf5b07a72adc64f1c04f580fa710f120427b42ecb6b8bd4"
+    },
+    {
+      "bytes": 62905,
+      "features": 2,
+      "missing_fraction": 0.0,
+      "path": "data\\raw\\uci_motion\\targets.csv",
+      "rows": 10928,
+      "sha256": "99ea0deba9c3c7b5fc988bad9e91b66f1b0da3650a99fb3bba6ad8093960fec4"
+    }
+  ],
+  "project": "REHAB AI",
+  "schema_validation": "PASS",
+  "static_context_files": []
+}

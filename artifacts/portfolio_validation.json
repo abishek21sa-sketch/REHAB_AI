@@ -1,0 +1,72 @@
+{
+  "checks": {
+    "modeled_unsafe_rate_upper_95_le_5pct": true,
+    "nonnegative_oracle_regret": true,
+    "oracle_zero_regret": true,
+    "uncertainty_not_worse_than_standard_mpc": true,
+    "zero_unsafe_rate": true
+  },
+  "claim_policy": {
+    "allowed_claim": "APACE is evaluated on its governed multi-objective objective and safety envelope; capacity, tail risk and uncertainty are reported separately.",
+    "clinical_validation": "EXTERNAL_VALIDATION_PENDING",
+    "production_write_allowed": false,
+    "universal_dominance_claimed": false
+  },
+  "evidence_boundary": "Synthetic rehabilitation-policy benchmark only; not a clinical effectiveness, safety, or medical-device validation claim.",
+  "finite_sample_safety": {
+    "interpretation": "Bound applies only to modeled policy-envelope violations in the synthetic benchmark, not clinical adverse-event probability.",
+    "modeled_unsafe_events": 0,
+    "one_sided_confidence": 0.95,
+    "release_threshold": 0.05,
+    "trials": 100,
+    "wilson_upper_bound": 0.026342720783174303
+  },
+  "horizon": 2,
+  "patients": 100,
+  "policies": {
+    "apace": {
+      "mean_cumulative_tail_loss": 1.2609560246954705,
+      "mean_final_capacity": 0.6967025906903043,
+      "mean_final_uncertainty": 0.015185224284153507,
+      "mean_regret_to_oracle": 0.0,
+      "policy": "apace",
+      "unsafe_rate": 0.0
+    },
+    "greedy": {
+      "mean_cumulative_tail_loss": 1.2689148326794275,
+      "mean_final_capacity": 0.7064732691792426,
+      "mean_final_uncertainty": 0.015605221694374317,
+      "mean_regret_to_oracle": 0.030320861142356506,
+      "policy": "greedy",
+      "unsafe_rate": 0.0
+    },
+    "oracle": {
+      "mean_cumulative_tail_loss": 1.2609560246954705,
+      "mean_final_capacity": 0.6967025906903043,
+      "mean_final_uncertainty": 0.015185224284153507,
+      "mean_regret_to_oracle": 0.0,
+      "policy": "oracle",
+      "unsafe_rate": 0.0
+    },
+    "risk_only": {
+      "mean_cumulative_tail_loss": 1.2560918975276136,
+      "mean_final_capacity": 0.7012373941069352,
+      "mean_final_uncertainty": 0.015477612324462965,
+      "mean_regret_to_oracle": 0.015540831144363394,
+      "policy": "risk_only",
+      "unsafe_rate": 0.0
+    },
+    "standard_mpc": {
+      "mean_cumulative_tail_loss": 1.2563694723999186,
+      "mean_final_capacity": 0.6982578052641718,
+      "mean_final_uncertainty": 0.015742821532910376,
+      "mean_regret_to_oracle": 0.017805856030163766,
+      "policy": "standard_mpc",
+      "unsafe_rate": 0.0
+    }
+  },
+  "release": "REHAB_AI_PORTFOLIO_RC1",
+  "seed": 2026,
+  "status": "PASS",
+  "validation_scope": "SYNTHETIC POLICY BENCHMARK"
+}

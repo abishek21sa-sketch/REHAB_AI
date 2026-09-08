@@ -1,0 +1,440 @@
+{
+  "actor": "Rehabilitation Clinician",
+  "decision": "rehabilitation progression / hold / reassessment",
+  "entity": "session / movement state",
+  "workspaces": [
+    {
+      "workspace": "Patient Command",
+      "engineering_question": "What does Patient Command show that would change the rehabilitation progression / hold / reassessment for the current session / movement state scope?",
+      "method": "Safety-first patient/session decision queue with state, uncertainty and progression status",
+      "evidence": "Evidence object: Safety-first patient/session decision queue with state, uncertainty and progression status; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable patient command evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the Patient Command evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "Sensor Capture",
+      "engineering_question": "What does Sensor Capture show that would change the rehabilitation progression / hold / reassessment for the current session / movement state scope?",
+      "method": "Timestamped landmark/IMU capture quality, completeness and session segmentation",
+      "evidence": "Evidence object: Timestamped landmark/IMU capture quality, completeness and session segmentation; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable sensor capture evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the Sensor Capture evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "Fusion Quality",
+      "engineering_question": "What does Fusion Quality show that would change the rehabilitation progression / hold / reassessment for the current session / movement state scope?",
+      "method": "Cross-sensor consistency, missingness and confidence weighting before state estimation",
+      "evidence": "Evidence object: Cross-sensor consistency, missingness and confidence weighting before state estimation; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable fusion quality evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the Fusion Quality evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "Biomechanics",
+      "engineering_question": "What does Biomechanics show that would change the rehabilitation progression / hold / reassessment for the current session / movement state scope?",
+      "method": "Joint-angle, bilateral asymmetry and movement-quality feature computation",
+      "evidence": "Evidence object: Joint-angle, bilateral asymmetry and movement-quality feature computation; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable biomechanics evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the Biomechanics evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "Gait Analysis",
+      "engineering_question": "What does Gait Analysis show that would change the rehabilitation progression / hold / reassessment for the current session / movement state scope?",
+      "method": "Temporal/spatial gait and symmetry measures with deviation from session baseline",
+      "evidence": "Evidence object: Temporal/spatial gait and symmetry measures with deviation from session baseline; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable gait analysis evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the Gait Analysis evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "State Estimation",
+      "engineering_question": "What does State Estimation show that would change the rehabilitation progression / hold / reassessment for the current session / movement state scope?",
+      "method": "Multimodal latent rehabilitation-state reconstruction with uncertainty",
+      "evidence": "Evidence object: Multimodal latent rehabilitation-state reconstruction with uncertainty; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable state estimation evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the State Estimation evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "Assessment",
+      "engineering_question": "What does Assessment show that would change the rehabilitation progression / hold / reassessment for the current session / movement state scope?",
+      "method": "Functional status scoring from observed movement features and validated state estimates",
+      "evidence": "Evidence object: Functional status scoring from observed movement features and validated state estimates; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable assessment evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the Assessment evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "Safety Envelope",
+      "engineering_question": "What does Safety Envelope show that would change the rehabilitation progression / hold / reassessment for the current session / movement state scope?",
+      "method": "Explicit progression constraints, uncertainty margins and no-go conditions",
+      "evidence": "Evidence object: Explicit progression constraints, uncertainty margins and no-go conditions; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable safety envelope evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the Safety Envelope evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "Hidden-State Model",
+      "engineering_question": "What does Hidden-State Model show that would change the rehabilitation progression / hold / reassessment for the current session / movement state scope?",
+      "method": "Gaussian HMM state probabilities and transition evidence across sequential observations",
+      "evidence": "Evidence object: Gaussian HMM state probabilities and transition evidence across sequential observations; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable hidden-state model evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the Hidden-State Model evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "MOTION-GUARD",
+      "engineering_question": "What does MOTION-GUARD show that would change the rehabilitation progression / hold / reassessment for the current session / movement state scope?",
+      "method": "Repository-authored uncertainty-aware progression guard rejecting unsafe high-gain actions",
+      "evidence": "Evidence object: Repository-authored uncertainty-aware progression guard rejecting unsafe high-gain actions; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable motion-guard evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the MOTION-GUARD evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "APACE",
+      "engineering_question": "What does APACE show that would change the rehabilitation progression / hold / reassessment for the current session / movement state scope?",
+      "method": "Risk-sensitive adaptive progression/control policy optimizing modeled rehabilitation objective",
+      "evidence": "Evidence object: Risk-sensitive adaptive progression/control policy optimizing modeled rehabilitation objective; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable apace evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the APACE evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "Therapy Scheduling",
+      "engineering_question": "What does Therapy Scheduling show that would change the rehabilitation progression / hold / reassessment for the current session / movement state scope?",
+      "method": "Constrained allocation of therapy/session resources and progression cadence",
+      "evidence": "Evidence object: Constrained allocation of therapy/session resources and progression cadence; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable therapy scheduling evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the Therapy Scheduling evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "Digital Twin",
+      "engineering_question": "What does Digital Twin show that would change the rehabilitation progression / hold / reassessment for the current session / movement state scope?",
+      "method": "Patient/session state twin used to simulate candidate intervention trajectories",
+      "evidence": "Evidence object: Patient/session state twin used to simulate candidate intervention trajectories; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable digital twin evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the Digital Twin evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "Recovery Forecast",
+      "engineering_question": "What does Recovery Forecast show that would change the rehabilitation progression / hold / reassessment for the current session / movement state scope?",
+      "method": "Trajectory forecast with uncertainty bands and scenario-dependent progression outcomes",
+      "evidence": "Evidence object: Trajectory forecast with uncertainty bands and scenario-dependent progression outcomes; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable recovery forecast evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the Recovery Forecast evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "Longitudinal Evidence",
+      "engineering_question": "What does Longitudinal Evidence show that would change the rehabilitation progression / hold / reassessment for the current session / movement state scope?",
+      "method": "Session-to-session trend, adherence/state change and uncertainty history",
+      "evidence": "Evidence object: Session-to-session trend, adherence/state change and uncertainty history; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable longitudinal evidence evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the Longitudinal Evidence evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "Population Lab",
+      "engineering_question": "What does Population Lab show that would change the rehabilitation progression / hold / reassessment for the current session / movement state scope?",
+      "method": "Cohort/reference comparison without allowing population averages to override patient safety",
+      "evidence": "Evidence object: Cohort/reference comparison without allowing population averages to override patient safety; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable population lab evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the Population Lab evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "Uncertainty",
+      "engineering_question": "What does Uncertainty show that would change the rehabilitation progression / hold / reassessment for the current session / movement state scope?",
+      "method": "Sensor, state, model and policy uncertainty decomposition with abstention thresholds",
+      "evidence": "Evidence object: Sensor, state, model and policy uncertainty decomposition with abstention thresholds; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable uncertainty evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the Uncertainty evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "AI Rehab Planner",
+      "engineering_question": "What does AI Rehab Planner show that would change the rehabilitation progression / hold / reassessment for the current session / movement state scope?",
+      "method": "Tool-using planner combining state estimation, APACE, MOTION-GUARD and twin forecasts",
+      "evidence": "Evidence object: Tool-using planner combining state estimation, APACE, MOTION-GUARD and twin forecasts; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable ai rehab planner evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the AI Rehab Planner evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "Research Evidence",
+      "engineering_question": "What does Research Evidence show that would change the rehabilitation progression / hold / reassessment for the current session / movement state scope?",
+      "method": "Oracle/regret, safety, sensitivity and synthetic-vs-clinical evidence boundaries",
+      "evidence": "Evidence object: Oracle/regret, safety, sensitivity and synthetic-vs-clinical evidence boundaries; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable research evidence evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the Research Evidence evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "Clinical Review",
+      "engineering_question": "What does Clinical Review show that would change the rehabilitation progression / hold / reassessment for the current session / movement state scope?",
+      "method": "Clinician-only progression approval with modeled-evidence limitations and no autonomous treatment",
+      "evidence": "Evidence object: Clinician-only progression approval with modeled-evidence limitations and no autonomous treatment; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable clinical review evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the Clinical Review evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "Data Backbone",
+      "engineering_question": "Can the rehabilitation progression / scheduling / review decision be traced to a reproducible external source rather than only a demo fixture?",
+      "method": "UCI activity/postural-transition source contract plus local landmark-session provenance",
+      "evidence": "Evidence object: UCI activity/postural-transition source contract plus local landmark-session provenance, with explicit external/reference data mode and claim boundary.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable data backbone evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the Data Backbone evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "Historical Intelligence",
+      "engineering_question": "How has longitudinal movement-state, transition and safety chronology changed across cohorts, runs or states?",
+      "method": "Frame/session chronology of asymmetry, state transition and progression-risk evidence",
+      "evidence": "Evidence object: Frame/session chronology of asymmetry, state transition and progression-risk evidence, with explicit external/reference data mode and claim boundary.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable historical intelligence evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the Historical Intelligence evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "Entity / Factor Explorer",
+      "engineering_question": "Which subject / sensor window / motion state / progression action carries the highest evidence concentration?",
+      "method": "Joint/side/movement feature ranking by asymmetry, instability and state contribution",
+      "evidence": "Evidence object: Joint/side/movement feature ranking by asymmetry, instability and state contribution, with explicit external/reference data mode and claim boundary.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable entity / factor explorer evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the Entity / Factor Explorer evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "Empirical Case Study",
+      "engineering_question": "Which movement-state transitions should block progression despite short-term capacity gain?",
+      "method": "Postural-transition stability study from observed movement to guarded progression",
+      "evidence": "Evidence object: Postural-transition stability study from observed movement to guarded progression, with explicit external/reference data mode and claim boundary.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable empirical case study evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the Empirical Case Study evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "External Validation",
+      "engineering_question": "How does sensor uncertainty change the APACE/MOTION-GUARD recommendation?",
+      "method": "Public activity data refresh and transfer checks for state-estimation features",
+      "evidence": "Evidence object: Public activity data refresh and transfer checks for state-estimation features, with explicit external/reference data mode and claim boundary.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable external validation evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the External Validation evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "Data Refresh",
+      "engineering_question": "Is the current analytical state fresh enough to support the rehabilitation progression / scheduling / review decision?",
+      "method": "Versioned UCI refresh, checksum, schema drift and safety/model revalidation",
+      "evidence": "Evidence object: Versioned UCI refresh, checksum, schema drift and safety/model revalidation, with explicit external/reference data mode and claim boundary.",
+      "required_inputs": [
+        "session / movement state",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable data refresh evidence for rehabilitation progression / hold / reassessment",
+      "operator_action": "Rehabilitation Clinician reviews the Data Refresh evidence, drills into the responsible session / movement state, then approves, holds or escalates the rehabilitation progression / hold / reassessment."
+    },
+    {
+      "workspace": "Episode Campaign",
+      "engineering_question": "Which progression action remains safe/reviewable across state-estimation realizations?",
+      "method": "Multi-seed HMM state inference + MOTION-GUARD filtering before APACE/twin escalation",
+      "evidence": "Action stability, minimum safety margin, HMM accuracy and guard score",
+      "required_inputs": [
+        "patient state / movement session / intervention action",
+        "validated empirical/reference evidence",
+        "current decision constraints"
+      ],
+      "decision_output": "Auditable episode campaign evidence for rehabilitation progression / HOLD decision",
+      "operator_action": "Progress only when the campaign remains inside the modeled safety envelope."
+    },
+    {
+      "workspace": "Safety-Margin Monitor",
+      "engineering_question": "How close is the selected action to the modeled safety boundary?",
+      "method": "Distribution of MOTION-GUARD safety margin across reference episode realizations",
+      "evidence": "Minimum/mean safety margin and selected-action frequency",
+      "required_inputs": [
+        "patient state / movement session / intervention action",
+        "validated empirical/reference evidence",
+        "current decision constraints"
+      ],
+      "decision_output": "Auditable safety-margin monitor evidence for rehabilitation progression / HOLD decision",
+      "operator_action": "HOLD progression when margin becomes narrow or volatile."
+    },
+    {
+      "workspace": "Progression Frontier",
+      "engineering_question": "What functional gain is available without sacrificing safety margin?",
+      "method": "Selected gain versus safety-margin frontier across candidate episode decisions",
+      "evidence": "Guard score, gain, safety margin and rejected max-gain alternative",
+      "required_inputs": [
+        "patient state / movement session / intervention action",
+        "validated empirical/reference evidence",
+        "current decision constraints"
+      ],
+      "decision_output": "Auditable progression frontier evidence for rehabilitation progression / HOLD decision",
+      "operator_action": "Choose the highest reviewable progression, not the highest nominal gain."
+    },
+    {
+      "workspace": "Sensor Reliability",
+      "engineering_question": "When should state-estimation uncertainty block progression?",
+      "method": "HMM holdout accuracy and empirical movement-asymmetry evidence review",
+      "evidence": "Latent-state validation metric, asymmetry evidence and abstention triggers",
+      "required_inputs": [
+        "patient state / movement session / intervention action",
+        "validated empirical/reference evidence",
+        "current decision constraints"
+      ],
+      "decision_output": "Auditable sensor reliability evidence for rehabilitation progression / HOLD decision",
+      "operator_action": "Acquire better movement evidence or repeat assessment before progression."
+    },
+    {
+      "workspace": "Twin Challenge",
+      "engineering_question": "Does the proposed action remain acceptable after APACE/digital-twin escalation?",
+      "method": "Campaign handoff from MOTION-GUARD into APACE and trajectory forecast review",
+      "evidence": "Guarded action, modeled state, predicted trajectory and safety evidence",
+      "required_inputs": [
+        "patient state / movement session / intervention action",
+        "validated empirical/reference evidence",
+        "current decision constraints"
+      ],
+      "decision_output": "Auditable twin challenge evidence for rehabilitation progression / HOLD decision",
+      "operator_action": "Escalate conflicting predictions to clinician review; never auto-progress."
+    },
+    {
+      "workspace": "Episode Decision Record",
+      "engineering_question": "Can the progression recommendation be reconstructed without making a clinical efficacy claim?",
+      "method": "Auditable state \u2192 HMM \u2192 MOTION-GUARD \u2192 APACE/twin dossier with evidence boundaries",
+      "evidence": "Scenario matrix, safety margins, limitations, non-clinical claim boundary and authority",
+      "required_inputs": [
+        "patient state / movement session / intervention action",
+        "validated empirical/reference evidence",
+        "current decision constraints"
+      ],
+      "decision_output": "Auditable episode decision record evidence for rehabilitation progression / HOLD decision",
+      "operator_action": "Clinician reviews and records the final progression/HOLD disposition."
+    },
+    {
+      "workspace": "Motion Evidence Backbone",
+      "engineering_question": "Is the movement-state evidence reliable enough for a progression recommendation?",
+      "method": "UCI activity/postural-transition acquisition, state-label validation, sequence confidence and MOTION-GUARD readiness gate",
+      "evidence": "Observation count, feature count, state distribution, raw hash, state-separation accuracy/margin and non-clinical claim boundary.",
+      "required_inputs": [
+        "validated public source/provenance",
+        "raw/canonical hash and schema state",
+        "current model/algorithm readiness"
+      ],
+      "decision_output": "Auditable motion evidence backbone evidence",
+      "operator_action": "Clinician HOLDs progression when movement-state confidence or sensor evidence is inadequate; this is not clinical efficacy evidence."
+    }
+  ],
+  "project_title": "REHAB AI",
+  "campaign": "Rehabilitation Episode Review Campaign",
+  "campaign_identity": "safety-margin volatility + progression stability frontier",
+  "depth_phase": "PROJECT_NATIVE_1P2_EXPANSION"
+}

@@ -1,0 +1,713 @@
+{
+  "release": "0.5.0",
+  "generated_at_utc": "2026-08-17T12:48:12.730940+00:00",
+  "file_count": 141,
+  "evidence_boundary": "Synthetic engineering/ML validation; external clinical validation pending.",
+  "files": [
+    {
+      "path": ".env.example",
+      "bytes": 36,
+      "sha256": "b47b10f66994c66a3636bb76aef3d0c208ec5b15394d3c1f2d5fe338248f35df"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 333,
+      "sha256": "ae4f21e8cfe2da83aa88c6ce11eb3c96bc939607c55faa4a31621d1c4bb7667d"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 105,
+      "sha256": "5505003e35a434fc7465ef8ec0cfa22e597dd05a5033d5bab64c1e672bc1349b"
+    },
+    {
+      "path": "Dockerfile",
+      "bytes": 221,
+      "sha256": "e5bf9c40f55ecfdb47d1d0c25725f96bdabde6155eff2ed0e770f4f77d26127d"
+    },
+    {
+      "path": "Makefile",
+      "bytes": 273,
+      "sha256": "a107c178aec96de304b6bd5fe95b095f994e1cca248e12a0b6a228eb60fffc93"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5258,
+      "sha256": "24dfa7308151a3b84a00cf0a75e98fbff962571ff4031bed48be5584b5bb0191"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 541,
+      "sha256": "b09c3815f7476e1f9bed8b5cd60f5dc247784db92bcc1141483574d4ab68b23d"
+    },
+    {
+      "path": "artifacts/models/fall_risk_logistic.joblib",
+      "bytes": 927,
+      "sha256": "50e14935ba807dd174d74bba0dfcb7f5154527c2bccf6305ed83f4eeeecbbbc1"
+    },
+    {
+      "path": "artifacts/models/fall_risk_metrics.json",
+      "bytes": 545,
+      "sha256": "a71caf90c5d1b9a955b1612169fd98d7cd0bbc99201e961d18cf2a717306d7e7"
+    },
+    {
+      "path": "artifacts/runtime/experiments.jsonl",
+      "bytes": 3072,
+      "sha256": "3b8a797ce8a77d9286c79d9dc7577f8d52e8a4108ed702042be5cdd8ff3afb62"
+    },
+    {
+      "path": "artifacts/validation/apace_diagnostics.json",
+      "bytes": 783,
+      "sha256": "15d15199efc50c4216347eeacc8fa6e3a54d0f1a842f277d38f47bb8effcd446"
+    },
+    {
+      "path": "artifacts/validation/apace_diagnostics.txt",
+      "bytes": 784,
+      "sha256": "1154466344b9ae634b610360cacbc038a024d40937d0f2444657f55b90f71d25"
+    },
+    {
+      "path": "artifacts/validation/release_manifest_v0.5.json",
+      "bytes": 23180,
+      "sha256": "7741fd5d89d1f26607ed56dcc39bcc02d9f561b7b1a0fc5bec56ea7ac947ec28"
+    },
+    {
+      "path": "config/default.yaml",
+      "bytes": 398,
+      "sha256": "7601c54f277cc3915d27d1e41b7dda02571975d92aa967fd792fe1a3b384f2ed"
+    },
+    {
+      "path": "data/README.md",
+      "bytes": 167,
+      "sha256": "06039716f14449eff3c6b474c0d8e9ff9ce7d3fec36fedf4dee11fbe4f96b571"
+    },
+    {
+      "path": "data/demo_sensor_sessions.h5",
+      "bytes": 73478,
+      "sha256": "19994b527928b5826c3f1f722bb2439275285d2ffd7090b2b5a171ba88d3b8a5"
+    },
+    {
+      "path": "dist/rehab_ai-0.5.0-py3-none-any.whl",
+      "bytes": 115842,
+      "sha256": "1f455c964663d75d54567f8c87c32659fcefd707b20b0fed50b74eabdd095d24"
+    },
+    {
+      "path": "docker-compose.yml",
+      "bytes": 199,
+      "sha256": "10f5d96186a7439c6c02a4e637f55fbba496d354ce1d00d92af8d8b5669d8ba9"
+    },
+    {
+      "path": "docs/ARCHITECTURE_DECISIONS.md",
+      "bytes": 1872,
+      "sha256": "885ab43f196a533ab60acdf5f53cbdce2418b4df4a598aee80bba306de4623c0"
+    },
+    {
+      "path": "docs/PORTFOLIO_DEMO.md",
+      "bytes": 2479,
+      "sha256": "f5acca7800fba81aa53945ad25cfc2274b03b1743e1253598e8be4472f81bdc5"
+    },
+    {
+      "path": "docs/TECHNICAL_METHODS.md",
+      "bytes": 7859,
+      "sha256": "9aba6ffdcba3bff328193e7421eeec73620f5939060147346076f029ce07efa1"
+    },
+    {
+      "path": "docs/architecture/ARCHITECTURE.md",
+      "bytes": 1149,
+      "sha256": "0d96b8f5d6e70c4af11e056290a84dc2343f36886aed438ab259abeb5e59f38d"
+    },
+    {
+      "path": "docs/architecture/DATA_CONTRACT.md",
+      "bytes": 1184,
+      "sha256": "b596641cc0ff921fe9f97897b3217694208b7eb2cf2eb6d87f9790841645ddf4"
+    },
+    {
+      "path": "docs/clinical/CLINICAL_SAFETY.md",
+      "bytes": 1846,
+      "sha256": "45016f060b8a731744026fccdfaf63f9d57ca32ff8c0ed4dd41ef916ea7b9d09"
+    },
+    {
+      "path": "docs/clinical/MODEL_CARDS.md",
+      "bytes": 1406,
+      "sha256": "a97f3b3a2665fd14dadc472bc9d50e5420840ba4c1e4f13b03006a6c91dfea56"
+    },
+    {
+      "path": "docs/governance/REHAB_AI_Repository_Constitution_v2.0.docx",
+      "bytes": 39310,
+      "sha256": "bdba0bc159434213a3ed40544a76700a19e892326aca57bd99f69ba41486531d"
+    },
+    {
+      "path": "docs/validation/VALIDATION_STRATEGY.md",
+      "bytes": 1693,
+      "sha256": "92d5ec16b3ffde27c9a0773171d0eea684322d4697ff832d01ab5fd06264120d"
+    },
+    {
+      "path": "docs/work_packages/EXECUTION_STATUS.md",
+      "bytes": 1276,
+      "sha256": "7eaff4c6e9fd411d321ec257a1cee30633faaf5da608a49126c7e2ad93ba784f"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 912,
+      "sha256": "ce936f429001e56f21807045590d189f1274948ba196c110dc0d86198f4fd416"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "bytes": 54,
+      "sha256": "535e5960a1e86717b1ca87ef351f53bf995a0da213cd6ab27506d598ba22dd9b"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 130,
+      "sha256": "a5cd0fd19d2b4f1d68fb20fbadb2ed6ce65c42856b0ce131f6aa9498d5cfce3a"
+    },
+    {
+      "path": "scripts/phase1_diagnostics.py",
+      "bytes": 762,
+      "sha256": "6d3658e2790bb2823cc51c5e3c352723337ff39a3338ed2ea40e7d38bb00973e"
+    },
+    {
+      "path": "scripts/phase_apace_diagnostics.py",
+      "bytes": 3198,
+      "sha256": "a4e91f53a7a725cd44cf9d06a120bd4d2467f8b91d6542e8718a776964617c87"
+    },
+    {
+      "path": "scripts/phase_identity_diagnostics.py",
+      "bytes": 1763,
+      "sha256": "7d418b0573113254847960c75f96bda15107cec9b9f3ac5457989f0124be23df"
+    },
+    {
+      "path": "scripts/run_demo.py",
+      "bytes": 520,
+      "sha256": "85c3ad6f0ea5a7099c350892baa31d20ece7031734cb30826764eb5dbc9d4485"
+    },
+    {
+      "path": "scripts/run_policy_demo.py",
+      "bytes": 328,
+      "sha256": "8dcfe36e6be3a9eecbb24ef5c2efcf415540a7e7ede7c788939ecf1e4345bb9c"
+    },
+    {
+      "path": "scripts/run_unix.sh",
+      "bytes": 273,
+      "sha256": "05847cb898597dcbd0f5c269e12a3f51a18e272bc7b6825285e6e093e337f126"
+    },
+    {
+      "path": "scripts/run_windows.ps1",
+      "bytes": 968,
+      "sha256": "379416b5082ea9a16ddc9932cb51de2c0ba664ed2b5b07c29248eacb1aa627f4"
+    },
+    {
+      "path": "scripts/train_models.py",
+      "bytes": 123,
+      "sha256": "e48f9e303e8d7a5a80f5538c370ad879bdace0d0f6ccef822a796afd3465fa61"
+    },
+    {
+      "path": "scripts/windows_acceptance.ps1",
+      "bytes": 436,
+      "sha256": "b48fd9b32cb77e143aaca7d92d9e10bd9b88c6beb05d849521c6e6feb7d10030"
+    },
+    {
+      "path": "src/rehab_ai/__init__.py",
+      "bytes": 22,
+      "sha256": "2c12b8ea17aeb6f9f72a6b02aca218bbc4508a46df9e365a8f6c45ad769e0b34"
+    },
+    {
+      "path": "src/rehab_ai/ai/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/ai/explain.py",
+      "bytes": 1767,
+      "sha256": "daef68f8aa41d91c43197a3592e6fd49f61c1f020ef35f7cab2b0cff84c436c4"
+    },
+    {
+      "path": "src/rehab_ai/ai/recovery.py",
+      "bytes": 1362,
+      "sha256": "cb85f1f1798b1426aec55be6fc3709019ae0482002498cc58a5be30efbebae39"
+    },
+    {
+      "path": "src/rehab_ai/ai/risk.py",
+      "bytes": 1584,
+      "sha256": "916078c5d9bc8663923a8bfe74f911d99d0aeede38146f30cba2cf4e226adda3"
+    },
+    {
+      "path": "src/rehab_ai/ai/trajectory.py",
+      "bytes": 1880,
+      "sha256": "81aae3309ad2c516b80679d940d92ea18d49be93acdbe610d64d304a35748707"
+    },
+    {
+      "path": "src/rehab_ai/apace/__init__.py",
+      "bytes": 190,
+      "sha256": "4098aec339fbbf3964d579a68b43965b5b95a936fd3133fad7670a860b1b2381"
+    },
+    {
+      "path": "src/rehab_ai/apace/algorithm.py",
+      "bytes": 10762,
+      "sha256": "932f96e2adaca69b479fd2bc7897452a3faac0b5a2a8cec80680839129175a06"
+    },
+    {
+      "path": "src/rehab_ai/biomechanics/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/biomechanics/gait.py",
+      "bytes": 1600,
+      "sha256": "9a57b0727ae998749ea8d9bd5593845237da7577108e11bf592398f8c675f58d"
+    },
+    {
+      "path": "src/rehab_ai/biomechanics/stability.py",
+      "bytes": 2082,
+      "sha256": "880e3f072b73afde924ac80d1564160e6982ca14b43cc7578359a7eb1bc4ea90"
+    },
+    {
+      "path": "src/rehab_ai/config.py",
+      "bytes": 1719,
+      "sha256": "206e5e434b0acc768b6e19637440ffc6ebddd8d4e61afc38e25fe6c5f426a211"
+    },
+    {
+      "path": "src/rehab_ai/control/__init__.py",
+      "bytes": 176,
+      "sha256": "b608f2718d55aa0a5690ac2dbec516b77d76f5dca8776c0a2bb194c519c5d23d"
+    },
+    {
+      "path": "src/rehab_ai/control/stochastic_mpc.py",
+      "bytes": 4152,
+      "sha256": "18e1e771e792d49f557e06a2f1663b2462c2ff308185d5114d7ee446da384e4d"
+    },
+    {
+      "path": "src/rehab_ai/data/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/data/ingestion.py",
+      "bytes": 2581,
+      "sha256": "a50c5c56db1a5fac31467d31b9b47643528d9d2023aca5c7489d63862fa9e1e7"
+    },
+    {
+      "path": "src/rehab_ai/data/synthetic.py",
+      "bytes": 2501,
+      "sha256": "e12c833dc9adf9b5cb61d4da6dddd63ae71bc1ece40511e387c27c5234f0ddbc"
+    },
+    {
+      "path": "src/rehab_ai/data/validation.py",
+      "bytes": 1399,
+      "sha256": "14f6e572ed7fb97323adebdae6a7077ece61aad4ddc7030b9928d2690522127f"
+    },
+    {
+      "path": "src/rehab_ai/decision/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/decision/engine.py",
+      "bytes": 1073,
+      "sha256": "3f9d5b4a177fcd83003d132f1626f513f4ffc008fc76b21ded2cffaf3b87d819"
+    },
+    {
+      "path": "src/rehab_ai/domain.py",
+      "bytes": 3563,
+      "sha256": "20ff3407cee6ce6b65827eb9c02a97fd56311dc433ad4a3cccfc853a95dc7e19"
+    },
+    {
+      "path": "src/rehab_ai/experiments/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/experiments/tracker.py",
+      "bytes": 730,
+      "sha256": "d76da61f40118c6e7a2840ce1efe8c43673b494950de2f9e64edee5401b35324"
+    },
+    {
+      "path": "src/rehab_ai/fusion/__init__.py",
+      "bytes": 41,
+      "sha256": "c76a8b0cb7c12cc7bbad2d51c30470561254f6c9064739a6c8b9945f69b36ddc"
+    },
+    {
+      "path": "src/rehab_ai/fusion/state_fusion.py",
+      "bytes": 2404,
+      "sha256": "46182b6ed9f3946994c5c6f2e7c86108a05c493492e5f17fff4daadd2aec2ea5"
+    },
+    {
+      "path": "src/rehab_ai/governance/__init__.py",
+      "bytes": 47,
+      "sha256": "7f9dbe58b44084f1615dda43b485d54b5fb84dfcb4d2b792367d98bdb4c818d3"
+    },
+    {
+      "path": "src/rehab_ai/governance/audit.py",
+      "bytes": 1210,
+      "sha256": "e9a1731758ddaa82d96ce0d76488d9081364b47df77441bc0ff62324df6b8dc8"
+    },
+    {
+      "path": "src/rehab_ai/ie/__init__.py",
+      "bytes": 216,
+      "sha256": "0087c02d12ac6cb37010df1a04f30e837893a4314bfe8ad69ff32d6125580185"
+    },
+    {
+      "path": "src/rehab_ai/ie/human_performance.py",
+      "bytes": 2444,
+      "sha256": "5281c64c219745723f0bdf23b33bce4f467b6e614cfa192831aa730d082be0df"
+    },
+    {
+      "path": "src/rehab_ai/learning/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/learning/feedback.py",
+      "bytes": 408,
+      "sha256": "150df6d61af3a5e835cbc777bf0a3022d5c4be170911626213529630c82fd229"
+    },
+    {
+      "path": "src/rehab_ai/ml/__init__.py",
+      "bytes": 58,
+      "sha256": "550b444bf57c71d6164c514bb30ff35f45a15df0349c29762213957f3638f9bf"
+    },
+    {
+      "path": "src/rehab_ai/ml/fall_risk_model.py",
+      "bytes": 3204,
+      "sha256": "46d804d2af08e217fd208b230ea25214c2e6f67b1e3fd65cfe2d665d519d6667"
+    },
+    {
+      "path": "src/rehab_ai/ml/phenotypes.py",
+      "bytes": 2559,
+      "sha256": "dccbde0909cad23b697455200ddebd77ff67012a5266fbbdceeeef8d58ce40f8"
+    },
+    {
+      "path": "src/rehab_ai/ml/treatment_response.py",
+      "bytes": 3267,
+      "sha256": "fa94178694ee5a8716346425088befc76d3648dd8dadfbbf5b21acf445990b9b"
+    },
+    {
+      "path": "src/rehab_ai/observability/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/observability/metrics.py",
+      "bytes": 475,
+      "sha256": "7367b91d8605ae4b1ab98d65d3f32362abe21904e4cd6c4e5c7e9bdae077ed17"
+    },
+    {
+      "path": "src/rehab_ai/optimization/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/optimization/multiobjective.py",
+      "bytes": 1287,
+      "sha256": "400e1aadb4179201b1bbc7877e896d9d73cd64041cdbc5324f8e6d69ea316af6"
+    },
+    {
+      "path": "src/rehab_ai/optimization/therapy.py",
+      "bytes": 3292,
+      "sha256": "709a7225ff0380b1b5f96fdb545768c8e39ed1054c404e6536f51495b2a6b30c"
+    },
+    {
+      "path": "src/rehab_ai/persistence/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/persistence/repository.py",
+      "bytes": 4244,
+      "sha256": "6d03c9ee146779952834749254c260bffd931f0e04b11fc07bedbc67185722c5"
+    },
+    {
+      "path": "src/rehab_ai/registry/__init__.py",
+      "bytes": 31,
+      "sha256": "28d09d39c7eea119708ac282d003e4c27f14f8ec5c2b1556db18b950607a2c3d"
+    },
+    {
+      "path": "src/rehab_ai/registry/models.py",
+      "bytes": 426,
+      "sha256": "ee2d85984bb1dbeb73417bd3b84fcb529d3e4a8f15013bcbbc43caad9020f820"
+    },
+    {
+      "path": "src/rehab_ai/scheduling/__init__.py",
+      "bytes": 55,
+      "sha256": "5f11fbda590c0ed4f19bb244430b794ead4e6e3fd08f0000014bb58f2cb2961e"
+    },
+    {
+      "path": "src/rehab_ai/scheduling/therapy_schedule.py",
+      "bytes": 3051,
+      "sha256": "5fcd6351bc43026374b3649115c0616b3c752b8abc873e327717f1d4b9279e2f"
+    },
+    {
+      "path": "src/rehab_ai/sensing/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/sensing/wearable.py",
+      "bytes": 1272,
+      "sha256": "88f120a09b67161780ad1d01e9eec193563eba0a9399b7786db53660c2315615"
+    },
+    {
+      "path": "src/rehab_ai/services/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/services/apace_studio.py",
+      "bytes": 5911,
+      "sha256": "7543cecadd6872f503defd1ccc870992c10e4e981933ebab4ed8b3c4e88a70c0"
+    },
+    {
+      "path": "src/rehab_ai/services/pipeline.py",
+      "bytes": 5949,
+      "sha256": "7c9dcb31c04a945bc440f254fc1ab214b305de44a3280bc786f88bada969d98a"
+    },
+    {
+      "path": "src/rehab_ai/services/policy_studio.py",
+      "bytes": 6365,
+      "sha256": "94b99dd6561bc4f006ba3c626ae03f1208c64a9ba0fd69ec7b86dfbdd8a6be77"
+    },
+    {
+      "path": "src/rehab_ai/simulation/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/simulation/engine.py",
+      "bytes": 1785,
+      "sha256": "c6952f039061096664b0982103b0235e8f72e8d9dedd355fd5986c560afdb5d1"
+    },
+    {
+      "path": "src/rehab_ai/state_estimation/__init__.py",
+      "bytes": 103,
+      "sha256": "9f5a05224ce0c0ca30fafc379a7e3e168259a20d00a9d3e2070d04fa1b9b43f3"
+    },
+    {
+      "path": "src/rehab_ai/state_estimation/ukf.py",
+      "bytes": 3110,
+      "sha256": "ef752189b1f9c5a6c0fd05c7f951139f02b98883c51d5217b8eb5b4407ee272b"
+    },
+    {
+      "path": "src/rehab_ai/storage/__init__.py",
+      "bytes": 160,
+      "sha256": "9d3d79470fabbaf9b24acdb17a02a04668c5c73bc2ac80cbd6f1c291ee81b970"
+    },
+    {
+      "path": "src/rehab_ai/storage/hdf5_archive.py",
+      "bytes": 2203,
+      "sha256": "650a18039b81042e0d83f4eeac939339f4585166113db17df5dad147bb8b1091"
+    },
+    {
+      "path": "src/rehab_ai/twin/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/twin/engine.py",
+      "bytes": 1140,
+      "sha256": "eb52e832da37e81606aefe02b5d95de640d2ee6526bb3fc75ad139ee966df426"
+    },
+    {
+      "path": "src/rehab_ai/twin/forecast.py",
+      "bytes": 2377,
+      "sha256": "c9688ed6e003ca77e1d08ef466c643ea4e9c0399b46be3583fccfd8fdc5e1eb0"
+    },
+    {
+      "path": "src/rehab_ai/vision/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/vision/movement.py",
+      "bytes": 948,
+      "sha256": "27699c66df72d84599a10d08b4aca00188fd17906be407de5b65ea023cef502e"
+    },
+    {
+      "path": "src/rehab_ai/web/__init__.py",
+      "bytes": 39,
+      "sha256": "078aa3f89bfd2db717cc0cda9a89918b249b8c68ba78320c9a2eed21cda40d0d"
+    },
+    {
+      "path": "src/rehab_ai/web/app.py",
+      "bytes": 2700,
+      "sha256": "248b7f4dd067b06371a8a344231f00cbe002088586bc3bde5434c5ee2b5372fe"
+    },
+    {
+      "path": "src/rehab_ai/web/frontend/app.js",
+      "bytes": 10322,
+      "sha256": "ced3a19ca81f429f103cce487c3768c021eab0ab2f8e50c3f16996e5e7fe3247"
+    },
+    {
+      "path": "src/rehab_ai/web/frontend/index.html",
+      "bytes": 412,
+      "sha256": "0f96e8ee431388db8ae2d6178ea598252969e26106bef5b712dbfd87f91b8e93"
+    },
+    {
+      "path": "src/rehab_ai/web/frontend/styles.css",
+      "bytes": 5906,
+      "sha256": "34577d6e3c1ceec898951671f794c8d4f7ab57cfe1f02a14a71280859e8493bd"
+    },
+    {
+      "path": "src/rehab_ai/web/frontend/vendor/vue.global.prod.js",
+      "bytes": 157924,
+      "sha256": "c459ba7cc8db65c982589fa5d64c7ff478877e8e5b0fd75683207cec6a4e89e8"
+    },
+    {
+      "path": "src/rehab_ai.egg-info/PKG-INFO",
+      "bytes": 5842,
+      "sha256": "d6ca702a92c1cbaed05ac27c1eb53c70991f2a8adf7a40275c27664c588c4c48"
+    },
+    {
+      "path": "src/rehab_ai.egg-info/SOURCES.txt",
+      "bytes": 3250,
+      "sha256": "cd978ae447351f6821068a5af8eceba5e56808740fbd0024cb95dc11606d991d"
+    },
+    {
+      "path": "src/rehab_ai.egg-info/dependency_links.txt",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "src/rehab_ai.egg-info/requires.txt",
+      "bytes": 171,
+      "sha256": "424a74a93db917c1950d316bf25a0492bf83a921f9f1359805895a41885295bb"
+    },
+    {
+      "path": "src/rehab_ai.egg-info/top_level.txt",
+      "bytes": 9,
+      "sha256": "2b20ffe5140c0dd35c9f80e1bba50627449f9feb61d96da0cd3ef68dd15f36a3"
+    },
+    {
+      "path": "tests/test_ai.py",
+      "bytes": 825,
+      "sha256": "3c79cdd8c3e748ae9471d8c738538b65f4470ec717b8598d3750022ad93ed1ad"
+    },
+    {
+      "path": "tests/test_apace_algorithm.py",
+      "bytes": 3079,
+      "sha256": "4aa128fed336951de6fa6d06157f03751a263af92426b0c58948f7b8599cea14"
+    },
+    {
+      "path": "tests/test_apace_studio.py",
+      "bytes": 685,
+      "sha256": "cfb873d2ccb56f720e90faf5d6f01c7c3ca0747c00d399d8f9eac17981858c0d"
+    },
+    {
+      "path": "tests/test_audit.py",
+      "bytes": 482,
+      "sha256": "9119c96f2441df8449c87c3437cd2044b6caa2cb59f3cc63c555faed6c928eb3"
+    },
+    {
+      "path": "tests/test_biomechanics.py",
+      "bytes": 682,
+      "sha256": "103fa0f1e602c0b272d223dc5971424271c2f6f5b14c38f66f73b7255c13741e"
+    },
+    {
+      "path": "tests/test_data_validation.py",
+      "bytes": 649,
+      "sha256": "cdc45462c442d64e3088917761baec89ffaa286cc4e4c14d3cf1bfa218c18500"
+    },
+    {
+      "path": "tests/test_feature_engines.py",
+      "bytes": 531,
+      "sha256": "e1ed5ace29a031a633323e2d78af582b18c5bab3002d9ead9f980efaacf15b2e"
+    },
+    {
+      "path": "tests/test_fusion.py",
+      "bytes": 661,
+      "sha256": "2889a50876724e5fd2071615b39e7e8dc87b8c63f5659723c43626af9c4c1af0"
+    },
+    {
+      "path": "tests/test_governance.py",
+      "bytes": 457,
+      "sha256": "28e8f42f04cc88fb4f9d11c0eef0f60e024c7569a5c7184e02fe28ebe78a60cb"
+    },
+    {
+      "path": "tests/test_hdf5_archive.py",
+      "bytes": 776,
+      "sha256": "249c50f27d9ada6509a67141fea53370eb3f6986c94ae738ec6b5f77b531b02f"
+    },
+    {
+      "path": "tests/test_ingestion.py",
+      "bytes": 1087,
+      "sha256": "fe1431572d225b013c39769d910cfc910d677426ad66ddf6296bae74ecea0c63"
+    },
+    {
+      "path": "tests/test_ml_model.py",
+      "bytes": 916,
+      "sha256": "f13ffe60cfe8dea93b054194c41189060ecb609cf41dba138a336ac24af3dffa"
+    },
+    {
+      "path": "tests/test_multiobjective.py",
+      "bytes": 742,
+      "sha256": "89eb6efa45d5caabc4d6b7f2d2fd73ab03828f08171b13e8591ebf36f13d0b96"
+    },
+    {
+      "path": "tests/test_optimization.py",
+      "bytes": 1136,
+      "sha256": "c9d792a1a8d51aee8338f53d4604e251f8c9eee610801cb189bc9ace6ee6d286"
+    },
+    {
+      "path": "tests/test_phenotypes.py",
+      "bytes": 407,
+      "sha256": "5156c666f127827ba4b3219ab6cd49be0ba559152d06ebc396d10bfdad375558"
+    },
+    {
+      "path": "tests/test_pipeline.py",
+      "bytes": 626,
+      "sha256": "f02eb16244799b1d9fff62805c92c5e105733a37bb28954e3e2c948f60353957"
+    },
+    {
+      "path": "tests/test_policy_studio.py",
+      "bytes": 691,
+      "sha256": "c60068af6962bf9b4691ba0ebedfe8bbd78f204c1f0c55fdabb1ee2b3ef7c82c"
+    },
+    {
+      "path": "tests/test_rehab_math_identity.py",
+      "bytes": 1594,
+      "sha256": "ae32b0c0a1e49108e46587c06ae012dcfe1b000d4a7ade662bc424575d8616f6"
+    },
+    {
+      "path": "tests/test_scheduling.py",
+      "bytes": 595,
+      "sha256": "dc46c273620897efe934e7eafec93349f5488a6338d17c441ee45ab6261d3b5f"
+    },
+    {
+      "path": "tests/test_scheduling_oracle.py",
+      "bytes": 701,
+      "sha256": "7adab52075bea1619b89bd5bf8e0d6a40290ab292a1c042c757085a00f5acc7c"
+    },
+    {
+      "path": "tests/test_simulation.py",
+      "bytes": 986,
+      "sha256": "30583f467bab291a302fd0afdb6bf9cfca6ca47be07aac8c1b05f773a9b39d3f"
+    },
+    {
+      "path": "tests/test_starlette_web.py",
+      "bytes": 574,
+      "sha256": "568c6bccd56ff1d9d29cc732a9247393f755fa5753f97c22aec4d7579131575c"
+    },
+    {
+      "path": "tests/test_stochastic_mpc.py",
+      "bytes": 1086,
+      "sha256": "90ec2d08bd7350445d7ad68b126c8a75acf1c76bdc9b82422d7b9bd8be178d3b"
+    },
+    {
+      "path": "tests/test_trajectory_ai.py",
+      "bytes": 972,
+      "sha256": "125a524253bbfa449a538f82b892a6ea91b6f4a542c23c7325815a24a1113fdd"
+    },
+    {
+      "path": "tests/test_treatment_response_ml.py",
+      "bytes": 445,
+      "sha256": "f44c46212642c6dcedeab5803b565ab88e39e46d337decfb89f8c698ece416e9"
+    },
+    {
+      "path": "tests/test_twin.py",
+      "bytes": 621,
+      "sha256": "ed03001a9efc3ffc88a3c57aa34a19b9e32200b79440ca997ada01056b176ae4"
+    },
+    {
+      "path": "tests/test_twin_forecast.py",
+      "bytes": 1057,
+      "sha256": "683db6060398b1530ec2f2baed8911c4246acd2324372b6d8d54a76e1f732150"
+    }
+  ]
+}

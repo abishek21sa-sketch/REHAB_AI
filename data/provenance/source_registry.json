@@ -1,0 +1,12 @@
+[
+  {
+    "project": "REHAB AI",
+    "company_context": "wearable/phone motion sensing",
+    "primary_dataset": "UCI Smartphone-Based Recognition of Human Activities and Postural Transitions",
+    "dataset_id": 341,
+    "instances": 10929,
+    "features": 561,
+    "license": "CC BY 4.0",
+    "intended_use": "HMM/state inference, transition risk, asymmetry/progression analytics, APACE and MOTION-GUARD evaluation. Do not make clinical-effectiveness claims."
+  }
+]

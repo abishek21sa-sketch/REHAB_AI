@@ -1,0 +1,8 @@
+{
+  "project": "REHAB AI",
+  "ui_namespace": "motion-",
+  "signature_marker": "Human Motion & Adaptive Control Studio",
+  "workspace_count": 33,
+  "max_allowed_pairwise_similarity": 0.2,
+  "product_identity": "human-motion biomechanics studio"
+}

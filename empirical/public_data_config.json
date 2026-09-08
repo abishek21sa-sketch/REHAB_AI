@@ -1,0 +1,18 @@
+{
+  "ptype": "rehab",
+  "title": "REHAB AI",
+  "dataset": "UCI Smartphone-Based Recognition of Human Activities and Postural Transitions",
+  "uci_id": 341,
+  "raw_dir": "uci_motion",
+  "primary_files": [
+    "features.csv",
+    "targets.csv"
+  ],
+  "static": [],
+  "algorithm": "MOTION-GUARD-v1",
+  "case": "Postural-Transition State-Confidence Progression Guard",
+  "authority": "CLINICIAN",
+  "claim": "UCI motion data validates activity/postural-state inference only. It is not clinical-treatment evidence and does not establish clinical effectiveness.",
+  "static_files": [],
+  "model_version": "public-data-backbone-1.0"
+}

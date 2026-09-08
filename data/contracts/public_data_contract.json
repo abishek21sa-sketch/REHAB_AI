@@ -1,0 +1,28 @@
+{
+  "dataset": "UCI Smartphone-Based Recognition of Human Activities and Postural Transitions",
+  "case_study": "Postural-Transition State-Confidence Progression Guard",
+  "raw_directory": "data/raw/uci_motion",
+  "required_primary_files": [
+    "features.csv",
+    "targets.csv"
+  ],
+  "schema_policy": {
+    "numeric_missing_values": "allowed but must be profiled/imputed inside train-only pipeline",
+    "empty_file": "reject",
+    "hash": "SHA-256",
+    "source_mode": "explicit"
+  },
+  "decision_chain": [
+    "real observed data",
+    "derived diagnostics",
+    "predictive model",
+    "repository-authored original algorithm",
+    "OR/simulation escalation",
+    "analytical AI challenge",
+    "human approval/HOLD"
+  ],
+  "original_algorithm": "MOTION-GUARD-v1",
+  "claim_boundary": "UCI motion data validates activity/postural-state inference only. It is not clinical-treatment evidence and does not establish clinical effectiveness.",
+  "human_authority": "CLINICIAN",
+  "autonomous_execution": false
+}

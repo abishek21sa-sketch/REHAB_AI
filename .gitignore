@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.coverage
+htmlcov/
+*.pyc
+*.pyo
+*.db
+.env
+.DS_Store
+artifacts/runtime/
+
+# Large reproducible datasets stay local; use the documented fetch/build flow.
+data/raw/uci_motion/features.csv
+data/external/uci_341.zip

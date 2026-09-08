@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "data_mode": "refreshed_external",
+  "source": "Smartphone-Based Recognition of Human Activities and Postural Transitions",
+  "profile": {
+    "exists": true,
+    "path": "data\\external\\uci_341.zip",
+    "bytes": 79596192,
+    "sha256": "4ac4ae064227c07045a99551876b54d204837e995e298b6488559e209b3deb09",
+    "archive_member": "Train/X_train.txt",
+    "rows": 7767,
+    "columns": 561,
+    "data_mode": "refreshed_external"
+  },
+  "claim_boundary": "UCI motion data validates activity/postural-state inference only. It is not clinical-treatment evidence and does not establish clinical effectiveness."
+}

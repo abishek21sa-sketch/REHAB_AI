@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "project": "REHAB AI",
+  "ui_identity": "human-motion biomechanics studio",
+  "ui_namespace": "motion-",
+  "workspaces": 33,
+  "checks": {
+    "signature_marker": true,
+    "namespace_depth": true,
+    "workspace_depth": true,
+    "workspace_count_matches": true,
+    "ml_lifecycle_visible": true,
+    "agent_planning_visible": true,
+    "empirical_provenance_visible": true
+  }
+}

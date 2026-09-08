@@ -1,0 +1,22 @@
+{
+  "validation_auc": 0.633399209486166,
+  "test_auc": 0.6915862068965517,
+  "test_brier": 0.2265026890433222,
+  "baseline": "training-prevalence constant probability",
+  "baseline_test_brier": 0.25233056185437136,
+  "n_train": 1260,
+  "n_validation": 270,
+  "n_test": 270,
+  "data_status": "SYNTHETIC VALIDATION",
+  "model_version": "logistic-fall-risk-synthetic-v2-json",
+  "features": [
+    "gait_speed_mps",
+    "gait_variability",
+    "sway_index",
+    "knee_asymmetry_deg",
+    "trunk_instability",
+    "fatigue",
+    "functional_capacity"
+  ],
+  "persistence_format": "portable JSON coefficients; no pickle/joblib runtime dependency"
+}

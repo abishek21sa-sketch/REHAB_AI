@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "standard": "Portfolio Engineering Governance Pack + Signature Algorithms v1.0",
+  "project": "REHAB AI",
+  "signature_algorithm": "SAFE-MPC",
+  "implementation_alias": "MOTION-GUARD/APACE bounded progression",
+  "implementation": "src/rehab_ai/control/signature_algorithm.py",
+  "acceptance_test": "tests/test_signature_algorithm.py",
+  "checks": {
+    "signature_contract": true,
+    "research_validation_protocol": true,
+    "explicit_objective_variables_constraints": true,
+    "baseline_and_counterfactual": true,
+    "ablation_and_sensitivity": true,
+    "evidence_class_separation": true,
+    "human_authority_gate": true,
+    "signature_tests": true
+  },
+  "solver_status": "deterministic_reference_contract",
+  "feasible": true,
+  "seed": 17,
+  "scenario": "reference_signature_contract",
+  "baseline": "maximum nominal gain or fixed progression without an explicit envelope",
+  "null_hypothesis": "H0: SAFE-MPC does not change the selected action relative to the nominal progression baseline.",
+  "ablation": "remove the state envelope while retaining load bounds",
+  "sensitivity": "tighten the envelope margin and report selected load or controlled no-feasible-action outcome",
+  "evidence_classes": [
+    "observed",
+    "simulated",
+    "optimized",
+    "shadow_mode",
+    "realized"
+  ],
+  "coverage": {
+    "passed": true,
+    "tests": 4,
+    "executed_statement_lines": 21,
+    "statement_lines": 23,
+    "line_coverage": 0.913,
+    "coverage_status": "PASS"
+  },
+  "clean_extraction": {
+    "status": "PASS",
+    "tracked_files": 6,
+    "extracted_files": 6,
+    "package": "C:\\Users\\babbi\\Documents\\Codex\\2026-09-06\\als\\work\\governance_packages\\REHAB_AI.zip"
+  }
+}

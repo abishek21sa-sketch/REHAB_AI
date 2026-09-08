@@ -1,0 +1,26 @@
+{
+  "model_version": "logistic-fall-risk-synthetic-v2-json",
+  "features": [
+    "gait_speed_mps",
+    "gait_variability",
+    "sway_index",
+    "knee_asymmetry_deg",
+    "trunk_instability",
+    "fatigue",
+    "functional_capacity"
+  ],
+  "coef": [
+    0.06492006525921412,
+    0.02581256214133475,
+    0.007498856153339752,
+    0.20776213502242066,
+    -0.047174177792089086,
+    -0.013184706940268935,
+    -0.43280486606748375
+  ],
+  "intercept": -1.4969809700950392,
+  "classes": [
+    0,
+    1
+  ]
+}

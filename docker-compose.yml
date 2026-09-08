@@ -1,0 +1,10 @@
+services:
+  rehab-ai:
+    build: .
+    ports:
+      - "8010:8010"
+    volumes:
+      - ./data:/app/data
+      - ./artifacts:/app/artifacts
+    environment:
+      REHAB_AI_CONFIG: config/default.yaml

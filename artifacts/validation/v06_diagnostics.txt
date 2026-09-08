@@ -1,0 +1,9 @@
+PASS inverse-dynamics static reference
+PASS multimodal gait-event fusion (8 events)
+PASS APACE synthetic policy benchmark
+  apace        capacity=0.743 tail=1.213 uncertainty=0.015 regret=0.000
+  greedy       capacity=0.755 tail=1.215 uncertainty=0.015 regret=0.024
+  risk_only    capacity=0.750 tail=1.201 uncertainty=0.015 regret=0.018
+  standard_mpc capacity=0.750 tail=1.201 uncertainty=0.015 regret=0.018
+  oracle       capacity=0.743 tail=1.213 uncertainty=0.015 regret=0.000
+VALIDATION_SCOPE=SYNTHETIC POLICY BENCHMARK

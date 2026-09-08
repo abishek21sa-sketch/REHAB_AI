@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "project": "REHAB AI",
+  "visual_identity": "human-motion biomechanics studio",
+  "native_entrypoint": "src/rehab_ai/web/frontend/index.html",
+  "shared_behavioral_contract": [
+    "input",
+    "evidence",
+    "decision",
+    "counterfactual",
+    "human approval"
+  ],
+  "project_specific_flow": [
+    "load observed motion session",
+    "estimate latent recovery state",
+    "select safe bounded load",
+    "review counterfactual progression",
+    "clinician approves or holds"
+  ],
+  "not_shared": [
+    "theme",
+    "layout",
+    "domain vocabulary",
+    "visualization type"
+  ],
+  "signature_endpoint": "/api/governance/signature"
+}

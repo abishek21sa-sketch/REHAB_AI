@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "checks": {
+    "safe_envelope_beats_baseline": true,
+    "temporal_model_beats_persistence": true,
+    "episode_replans_each_week": true,
+    "episode_no_envelope_violation": true,
+    "uncertainty_contracts": true,
+    "population_all_phenotypes": true
+  },
+  "episode": {
+    "status": "COMPLETED",
+    "phenotype": "balanced",
+    "weeks": [
+      {
+        "week": 1,
+        "action": "Balance precision",
+        "capacity": 0.5647623968067674,
+        "fatigue": 0.19630010856782207,
+        "pain": 0.1452125,
+        "stability_margin_m": 0.03462473503826131,
+        "safe_limit": 0.4097547272433523,
+        "applied_load": 0.3045,
+        "predicted_gain": 0.044162620497287086,
+        "observed_gain": 0.04554838583695449,
+        "parameter_std": 0.15600000000000003
+      },
+      {
+        "week": 2,
+        "action": "Strength adaptation",
+        "capacity": 0.6452202503823585,
+        "fatigue": 0.1883870362066762,
+        "pain": 0.1340080833333333,
+        "stability_margin_m": 0.03423250325034419,
+        "safe_limit": 0.47154537593508733,
+        "applied_load": 0.36501333333333325,
+        "predicted_gain": 0.04555451707633382,
+        "observed_gain": 0.040146261878842994,
+        "parameter_std": 0.12168000000000002
+      },
+      {
+        "week": 3,
+        "action": "Gait progression",
+        "capacity": 0.7286410600882819,
+        "fatigue": 0.19281712939232032,
+        "pain": 0.12525695166666664,
+        "stability_margin_m": 0.033867495727832125,
+        "safe_limit": 0.5942997244256789,
+        "applied_load": 0.40040000000000003,
+        "predicted_gain": 0.04135811224364408,
+        "observed_gain": 0.045140110561913846,
+        "parameter_std": 0.09491040000000002
+      },
+      {
+        "week": 4,
+        "action": "Gait progression",
+        "capacity": 0.8015803729996877,
+        "fatigue": 0.19509161507273962,
+        "pain": 0.11773097843333331,
+        "stability_margin_m": 0.03345149073302422,
+        "safe_limit": 0.6179722574045059,
+        "applied_load": 0.40040000000000003,
+        "predicted_gain": 0.03588282384659035,
+        "observed_gain": 0.040484607275894334,
+        "parameter_std": 0.07403011200000002
+      }
+    ],
+    "final_capacity": 0.8015803729996877,
+    "envelope_violations": 0,
+    "replans": 4,
+    "validation_scope": "SYNTHETIC ADAPTIVE EPISODE"
+  },
+  "stress": {
+    "patients": 10,
+    "seed": 42,
+    "results": [
+      {
+        "phenotype": "fast_responder",
+        "n": 2,
+        "mean_final_capacity": 0.7185017268991233,
+        "mean_gain": 0.2599850523436717,
+        "envelope_violation_rate": 0.0,
+        "mean_final_uncertainty": 0.09491040000000002
+      },
+      {
+        "phenotype": "slow_responder",
+        "n": 2,
+        "mean_final_capacity": 0.6486048493488201,
+        "mean_gain": 0.2021075052542938,
+        "envelope_violation_rate": 0.0,
+        "mean_final_uncertainty": 0.09491040000000002
+      },
+      {
+        "phenotype": "fatigue_sensitive",
+        "n": 2,
+        "mean_final_capacity": 0.7394001076433412,
+        "mean_gain": 0.2253160417556901,
+        "envelope_violation_rate": 0.0,
+        "mean_final_uncertainty": 0.09491040000000002
+      },
+      {
+        "phenotype": "pain_sensitive",
+        "n": 2,
+        "mean_final_capacity": 0.6570197535529543,
+        "mean_gain": 0.19043562991029056,
+        "envelope_violation_rate": 0.0,
+        "mean_final_uncertainty": 0.09491040000000002
+      },
+      {
+        "phenotype": "balanced",
+        "n": 2,
+        "mean_final_capacity": 0.6319021522528123,
+        "mean_gain": 0.22493379431860933,
+        "envelope_violation_rate": 0.0,
+        "mean_final_uncertainty": 0.09491040000000002
+      }
+    ],
+    "validation_scope": "SYNTHETIC POPULATION STRESS TEST"
+  }
+}

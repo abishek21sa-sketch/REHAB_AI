@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "runtime_ms": 37274.23,
+  "project": "REHAB AI",
+  "ml_family": "Gaussian hidden-state sequence learning (HMM)",
+  "original_algorithm": "MOTION-GUARD-v1",
+  "workspace_count": 33,
+  "human_authority": "CLINICIAN",
+  "autonomous_execution": false,
+  "decision": {
+    "name": "deload_balance",
+    "intensity": 0.35,
+    "instability": 0.18,
+    "gain": 0.48,
+    "safety_margin": 0.5049245494893336,
+    "guard_score": 1.0168372817663454
+  },
+  "counterfactual": {
+    "naive_policy": "maximum expected functional gain",
+    "choice": "progress_resistance",
+    "disagrees": true
+  }
+}

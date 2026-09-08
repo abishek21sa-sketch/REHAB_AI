@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "tests": "65 passed",
+  "frontend_syntax": "PASS",
+  "acceptance_fixtures": [
+    "observed_landmark_session.csv",
+    "observed_landmark_session_asymmetric.csv",
+    "invalid_missing_right_knee.csv"
+  ],
+  "evidence": "deterministic validation fixtures; not patient data"
+}

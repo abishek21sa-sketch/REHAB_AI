@@ -1,0 +1,1271 @@
+{
+  "version": "0.9.0",
+  "generated_at_utc": "2026-08-23T14:15:21.868736+00:00",
+  "files": [
+    {
+      "path": ".env.example",
+      "size": 36,
+      "sha256": "b47b10f66994c66a3636bb76aef3d0c208ec5b15394d3c1f2d5fe338248f35df"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "size": 333,
+      "sha256": "ae4f21e8cfe2da83aa88c6ce11eb3c96bc939607c55faa4a31621d1c4bb7667d"
+    },
+    {
+      "path": ".gitignore",
+      "size": 105,
+      "sha256": "5505003e35a434fc7465ef8ec0cfa22e597dd05a5033d5bab64c1e672bc1349b"
+    },
+    {
+      "path": ".pytest_cache/.gitignore",
+      "size": 37,
+      "sha256": "3ed731b65d06150c138e2dadb0be0697550888a6b47eb8c45ecc9adba8b8e9bd"
+    },
+    {
+      "path": ".pytest_cache/CACHEDIR.TAG",
+      "size": 191,
+      "sha256": "37dc88ef9a0abeddbe81053a6dd8fdfb13afb613045ea1eb4a5c815a74a3bde4"
+    },
+    {
+      "path": ".pytest_cache/README.md",
+      "size": 302,
+      "sha256": "73fd6fccdd802c419a6b2d983d6c3173b7da97558ac4b589edec2dfe443db9ad"
+    },
+    {
+      "path": ".pytest_cache/v/cache/lastfailed",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": ".pytest_cache/v/cache/nodeids",
+      "size": 4766,
+      "sha256": "510030000b278d17da3a8b2ed2749ef49a54cfbba8b5c645d3c371e49441a608"
+    },
+    {
+      "path": "Dockerfile",
+      "size": 221,
+      "sha256": "e5bf9c40f55ecfdb47d1d0c25725f96bdabde6155eff2ed0e770f4f77d26127d"
+    },
+    {
+      "path": "Makefile",
+      "size": 273,
+      "sha256": "a107c178aec96de304b6bd5fe95b095f994e1cca248e12a0b6a228eb60fffc93"
+    },
+    {
+      "path": "README.md",
+      "size": 6478,
+      "sha256": "1ffea595f68eb816c1888b2e382e813bc53caa0b13b791fd6db729cd4103984b"
+    },
+    {
+      "path": "SECURITY.md",
+      "size": 541,
+      "sha256": "b09c3815f7476e1f9bed8b5cd60f5dc247784db92bcc1141483574d4ab68b23d"
+    },
+    {
+      "path": "artifacts/models/fall_risk_logistic_v2.json",
+      "size": 504,
+      "sha256": "514702a11a2a6e8dddf7b50ee2b22a3fd8898238582499fb3472ab71b39682d5"
+    },
+    {
+      "path": "artifacts/models/fall_risk_metrics.json",
+      "size": 642,
+      "sha256": "97d5c26a36d1d5dd5e368dd66fb1c57a75f2a779a6dd93fa37fb6783a6f7e04d"
+    },
+    {
+      "path": "artifacts/runtime/experiments.jsonl",
+      "size": 26111,
+      "sha256": "bc09c5adc3321b9c43043bf03bc21407c66ecc3dcf45cc16498c0158cd3d4ad8"
+    },
+    {
+      "path": "artifacts/validation/apace_diagnostics.json",
+      "size": 783,
+      "sha256": "15d15199efc50c4216347eeacc8fa6e3a54d0f1a842f277d38f47bb8effcd446"
+    },
+    {
+      "path": "artifacts/validation/apace_diagnostics.txt",
+      "size": 784,
+      "sha256": "1154466344b9ae634b610360cacbc038a024d40937d0f2444657f55b90f71d25"
+    },
+    {
+      "path": "artifacts/validation/release_manifest_v0.5.json",
+      "size": 23345,
+      "sha256": "22ca02c46190a1c38e0dad7d26c097c2392fe7b928bcd7b757a36c48e7e59546"
+    },
+    {
+      "path": "artifacts/validation/release_manifest_v06.json",
+      "size": 23909,
+      "sha256": "a39d4801c7fbfacde97be2637b02a9641abc6571397ec2a74b430c904558a550"
+    },
+    {
+      "path": "artifacts/validation/v06_diagnostics.txt",
+      "size": 526,
+      "sha256": "0876ee22b6b5a0b4783c5a288e1c015a147ddf5560972dcd0d4929fd378d25ab"
+    },
+    {
+      "path": "artifacts/validation/v08_depth_diagnostics.json",
+      "size": 1446,
+      "sha256": "104e0a248f3c970dd2bb3605b58157bc41a2306ece31f1e1273622a310731982"
+    },
+    {
+      "path": "artifacts/validation/v08_diagnostics.json",
+      "size": 1446,
+      "sha256": "104e0a248f3c970dd2bb3605b58157bc41a2306ece31f1e1273622a310731982"
+    },
+    {
+      "path": "artifacts/validation/v08_tests.txt",
+      "size": 80,
+      "sha256": "3a105b429c566a6ab228658f80ae3094d2be8b3cd71c1dc02ddbcc5dceba360f"
+    },
+    {
+      "path": "artifacts/validation/v09_integration_diagnostics.json",
+      "size": 3804,
+      "sha256": "38cc11961aae2d976f9462f2a9178552d48c1cf0682b336a6cfaeec218f0df6f"
+    },
+    {
+      "path": "build/lib/rehab_ai/__init__.py",
+      "size": 22,
+      "sha256": "1fd3564596fb35b79144f2cffd5d5f01198b357ada9e8ad533e38e63ef3fdae8"
+    },
+    {
+      "path": "build/lib/rehab_ai/ai/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "build/lib/rehab_ai/ai/explain.py",
+      "size": 1767,
+      "sha256": "daef68f8aa41d91c43197a3592e6fd49f61c1f020ef35f7cab2b0cff84c436c4"
+    },
+    {
+      "path": "build/lib/rehab_ai/ai/recovery.py",
+      "size": 1362,
+      "sha256": "cb85f1f1798b1426aec55be6fc3709019ae0482002498cc58a5be30efbebae39"
+    },
+    {
+      "path": "build/lib/rehab_ai/ai/risk.py",
+      "size": 1584,
+      "sha256": "916078c5d9bc8663923a8bfe74f911d99d0aeede38146f30cba2cf4e226adda3"
+    },
+    {
+      "path": "build/lib/rehab_ai/ai/trajectory.py",
+      "size": 1880,
+      "sha256": "81aae3309ad2c516b80679d940d92ea18d49be93acdbe610d64d304a35748707"
+    },
+    {
+      "path": "build/lib/rehab_ai/apace/__init__.py",
+      "size": 190,
+      "sha256": "4098aec339fbbf3964d579a68b43965b5b95a936fd3133fad7670a860b1b2381"
+    },
+    {
+      "path": "build/lib/rehab_ai/apace/algorithm.py",
+      "size": 14733,
+      "sha256": "bdf8a9fe95ffab46276699f336364faf0ae8d172a574cc1f4cdd6b7d8dc18bee"
+    },
+    {
+      "path": "build/lib/rehab_ai/apace/benchmark.py",
+      "size": 3782,
+      "sha256": "2472f57da62974567a782ab5bbb9e515097a80abbb40b614e5bc055690426046"
+    },
+    {
+      "path": "build/lib/rehab_ai/apace/integrated.py",
+      "size": 3877,
+      "sha256": "93f8a28b6060592a5a2728c4d05bea2f60ba58c6e71ea7f8ee4dedec6b6d6f2e"
+    },
+    {
+      "path": "build/lib/rehab_ai/apace/population_stress.py",
+      "size": 1606,
+      "sha256": "09463303704321ea21e1b2fce060f8453ea8edc670f1538a3e2826fed0afc2fc"
+    },
+    {
+      "path": "build/lib/rehab_ai/biomechanics/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "build/lib/rehab_ai/biomechanics/dynamics.py",
+      "size": 2421,
+      "sha256": "f557be9f8d9175d62ba594cb543451e2cef4b28896c6bc48f9ed576473442098"
+    },
+    {
+      "path": "build/lib/rehab_ai/biomechanics/energetics.py",
+      "size": 1554,
+      "sha256": "770d01ae4e27b9f3deab40e4ee03d9e3dc77f80be31a1ccc69027b222bf475d7"
+    },
+    {
+      "path": "build/lib/rehab_ai/biomechanics/gait.py",
+      "size": 1600,
+      "sha256": "9a57b0727ae998749ea8d9bd5593845237da7577108e11bf592398f8c675f58d"
+    },
+    {
+      "path": "build/lib/rehab_ai/biomechanics/gait_events.py",
+      "size": 2708,
+      "sha256": "706e995ce044ec2e76326a77ce8b6c3a551f1f2e5b1bdd50abe289fa2c0010d5"
+    },
+    {
+      "path": "build/lib/rehab_ai/biomechanics/signal_quality.py",
+      "size": 1237,
+      "sha256": "9a04c06313f1c344267c178f656c1b5b081a333e377732d044e494f1ba38e987"
+    },
+    {
+      "path": "build/lib/rehab_ai/biomechanics/stability.py",
+      "size": 2082,
+      "sha256": "880e3f072b73afde924ac80d1564160e6982ca14b43cc7578359a7eb1bc4ea90"
+    },
+    {
+      "path": "build/lib/rehab_ai/config.py",
+      "size": 1719,
+      "sha256": "206e5e434b0acc768b6e19637440ffc6ebddd8d4e61afc38e25fe6c5f426a211"
+    },
+    {
+      "path": "build/lib/rehab_ai/control/__init__.py",
+      "size": 176,
+      "sha256": "b608f2718d55aa0a5690ac2dbec516b77d76f5dca8776c0a2bb194c519c5d23d"
+    },
+    {
+      "path": "build/lib/rehab_ai/control/stochastic_mpc.py",
+      "size": 4152,
+      "sha256": "18e1e771e792d49f557e06a2f1663b2462c2ff308185d5114d7ee446da384e4d"
+    },
+    {
+      "path": "build/lib/rehab_ai/data/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "build/lib/rehab_ai/data/ingestion.py",
+      "size": 2581,
+      "sha256": "a50c5c56db1a5fac31467d31b9b47643528d9d2023aca5c7489d63862fa9e1e7"
+    },
+    {
+      "path": "build/lib/rehab_ai/data/synthetic.py",
+      "size": 2501,
+      "sha256": "e12c833dc9adf9b5cb61d4da6dddd63ae71bc1ece40511e387c27c5234f0ddbc"
+    },
+    {
+      "path": "build/lib/rehab_ai/data/validation.py",
+      "size": 1399,
+      "sha256": "14f6e572ed7fb97323adebdae6a7077ece61aad4ddc7030b9928d2690522127f"
+    },
+    {
+      "path": "build/lib/rehab_ai/decision/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "build/lib/rehab_ai/decision/engine.py",
+      "size": 1073,
+      "sha256": "3f9d5b4a177fcd83003d132f1626f513f4ffc008fc76b21ded2cffaf3b87d819"
+    },
+    {
+      "path": "build/lib/rehab_ai/domain.py",
+      "size": 3563,
+      "sha256": "20ff3407cee6ce6b65827eb9c02a97fd56311dc433ad4a3cccfc853a95dc7e19"
+    },
+    {
+      "path": "build/lib/rehab_ai/experiments/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "build/lib/rehab_ai/experiments/tracker.py",
+      "size": 730,
+      "sha256": "d76da61f40118c6e7a2840ce1efe8c43673b494950de2f9e64edee5401b35324"
+    },
+    {
+      "path": "build/lib/rehab_ai/fusion/__init__.py",
+      "size": 41,
+      "sha256": "c76a8b0cb7c12cc7bbad2d51c30470561254f6c9064739a6c8b9945f69b36ddc"
+    },
+    {
+      "path": "build/lib/rehab_ai/fusion/state_fusion.py",
+      "size": 2404,
+      "sha256": "46182b6ed9f3946994c5c6f2e7c86108a05c493492e5f17fff4daadd2aec2ea5"
+    },
+    {
+      "path": "build/lib/rehab_ai/governance/__init__.py",
+      "size": 47,
+      "sha256": "7f9dbe58b44084f1615dda43b485d54b5fb84dfcb4d2b792367d98bdb4c818d3"
+    },
+    {
+      "path": "build/lib/rehab_ai/governance/audit.py",
+      "size": 1210,
+      "sha256": "e9a1731758ddaa82d96ce0d76488d9081364b47df77441bc0ff62324df6b8dc8"
+    },
+    {
+      "path": "build/lib/rehab_ai/ie/__init__.py",
+      "size": 216,
+      "sha256": "0087c02d12ac6cb37010df1a04f30e837893a4314bfe8ad69ff32d6125580185"
+    },
+    {
+      "path": "build/lib/rehab_ai/ie/human_performance.py",
+      "size": 2444,
+      "sha256": "5281c64c219745723f0bdf23b33bce4f467b6e614cfa192831aa730d082be0df"
+    },
+    {
+      "path": "build/lib/rehab_ai/learning/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "build/lib/rehab_ai/learning/feedback.py",
+      "size": 408,
+      "sha256": "150df6d61af3a5e835cbc777bf0a3022d5c4be170911626213529630c82fd229"
+    },
+    {
+      "path": "build/lib/rehab_ai/ml/__init__.py",
+      "size": 58,
+      "sha256": "550b444bf57c71d6164c514bb30ff35f45a15df0349c29762213957f3638f9bf"
+    },
+    {
+      "path": "build/lib/rehab_ai/ml/fall_risk_model.py",
+      "size": 3785,
+      "sha256": "56299646eaea0fb44c78ac890b123f8af149dec8396717b8ef4021fa57f18383"
+    },
+    {
+      "path": "build/lib/rehab_ai/ml/phenotypes.py",
+      "size": 2559,
+      "sha256": "dccbde0909cad23b697455200ddebd77ff67012a5266fbbdceeeef8d58ce40f8"
+    },
+    {
+      "path": "build/lib/rehab_ai/ml/safe_envelope.py",
+      "size": 4089,
+      "sha256": "7c9c08488dc7c2cd5b99664d0001f33b9b756274e303bb5ff1eabc68ff0afe68"
+    },
+    {
+      "path": "build/lib/rehab_ai/ml/temporal_recovery.py",
+      "size": 3632,
+      "sha256": "5d3249e1e3b8e3916b3ed300a400ecd1bf677050822ac44af8eece4d6cce6480"
+    },
+    {
+      "path": "build/lib/rehab_ai/ml/treatment_response.py",
+      "size": 3267,
+      "sha256": "fa94178694ee5a8716346425088befc76d3648dd8dadfbbf5b21acf445990b9b"
+    },
+    {
+      "path": "build/lib/rehab_ai/observability/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "build/lib/rehab_ai/observability/metrics.py",
+      "size": 475,
+      "sha256": "7367b91d8605ae4b1ab98d65d3f32362abe21904e4cd6c4e5c7e9bdae077ed17"
+    },
+    {
+      "path": "build/lib/rehab_ai/optimization/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "build/lib/rehab_ai/optimization/multiobjective.py",
+      "size": 1287,
+      "sha256": "400e1aadb4179201b1bbc7877e896d9d73cd64041cdbc5324f8e6d69ea316af6"
+    },
+    {
+      "path": "build/lib/rehab_ai/optimization/therapy.py",
+      "size": 3292,
+      "sha256": "709a7225ff0380b1b5f96fdb545768c8e39ed1054c404e6536f51495b2a6b30c"
+    },
+    {
+      "path": "build/lib/rehab_ai/persistence/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "build/lib/rehab_ai/persistence/repository.py",
+      "size": 4244,
+      "sha256": "6d03c9ee146779952834749254c260bffd931f0e04b11fc07bedbc67185722c5"
+    },
+    {
+      "path": "build/lib/rehab_ai/registry/__init__.py",
+      "size": 31,
+      "sha256": "28d09d39c7eea119708ac282d003e4c27f14f8ec5c2b1556db18b950607a2c3d"
+    },
+    {
+      "path": "build/lib/rehab_ai/registry/models.py",
+      "size": 426,
+      "sha256": "ee2d85984bb1dbeb73417bd3b84fcb529d3e4a8f15013bcbbc43caad9020f820"
+    },
+    {
+      "path": "build/lib/rehab_ai/scheduling/__init__.py",
+      "size": 55,
+      "sha256": "5f11fbda590c0ed4f19bb244430b794ead4e6e3fd08f0000014bb58f2cb2961e"
+    },
+    {
+      "path": "build/lib/rehab_ai/scheduling/therapy_schedule.py",
+      "size": 3051,
+      "sha256": "5fcd6351bc43026374b3649115c0616b3c752b8abc873e327717f1d4b9279e2f"
+    },
+    {
+      "path": "build/lib/rehab_ai/sensing/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "build/lib/rehab_ai/sensing/wearable.py",
+      "size": 1272,
+      "sha256": "88f120a09b67161780ad1d01e9eec193563eba0a9399b7786db53660c2315615"
+    },
+    {
+      "path": "build/lib/rehab_ai/services/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "build/lib/rehab_ai/services/apace_studio.py",
+      "size": 5907,
+      "sha256": "5780518b616ad2e247f2ef652a90fa503674a7299004ac9afc12066ba0004b3d"
+    },
+    {
+      "path": "build/lib/rehab_ai/services/pipeline.py",
+      "size": 5949,
+      "sha256": "7c9dcb31c04a945bc440f254fc1ab214b305de44a3280bc786f88bada969d98a"
+    },
+    {
+      "path": "build/lib/rehab_ai/services/policy_studio.py",
+      "size": 6365,
+      "sha256": "94b99dd6561bc4f006ba3c626ae03f1208c64a9ba0fd69ec7b86dfbdd8a6be77"
+    },
+    {
+      "path": "build/lib/rehab_ai/simulation/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "build/lib/rehab_ai/simulation/engine.py",
+      "size": 1785,
+      "sha256": "c6952f039061096664b0982103b0235e8f72e8d9dedd355fd5986c560afdb5d1"
+    },
+    {
+      "path": "build/lib/rehab_ai/state_estimation/__init__.py",
+      "size": 103,
+      "sha256": "9f5a05224ce0c0ca30fafc379a7e3e168259a20d00a9d3e2070d04fa1b9b43f3"
+    },
+    {
+      "path": "build/lib/rehab_ai/state_estimation/ukf.py",
+      "size": 3110,
+      "sha256": "ef752189b1f9c5a6c0fd05c7f951139f02b98883c51d5217b8eb5b4407ee272b"
+    },
+    {
+      "path": "build/lib/rehab_ai/storage/__init__.py",
+      "size": 160,
+      "sha256": "9d3d79470fabbaf9b24acdb17a02a04668c5c73bc2ac80cbd6f1c291ee81b970"
+    },
+    {
+      "path": "build/lib/rehab_ai/storage/hdf5_archive.py",
+      "size": 2203,
+      "sha256": "650a18039b81042e0d83f4eeac939339f4585166113db17df5dad147bb8b1091"
+    },
+    {
+      "path": "build/lib/rehab_ai/twin/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "build/lib/rehab_ai/twin/adaptive_episode.py",
+      "size": 3533,
+      "sha256": "b72e380457881865a552b418ba1fd631251aab8888277742e5a2c57ae9d5972b"
+    },
+    {
+      "path": "build/lib/rehab_ai/twin/engine.py",
+      "size": 1140,
+      "sha256": "eb52e832da37e81606aefe02b5d95de640d2ee6526bb3fc75ad139ee966df426"
+    },
+    {
+      "path": "build/lib/rehab_ai/twin/forecast.py",
+      "size": 2377,
+      "sha256": "c9688ed6e003ca77e1d08ef466c643ea4e9c0399b46be3583fccfd8fdc5e1eb0"
+    },
+    {
+      "path": "build/lib/rehab_ai/vision/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "build/lib/rehab_ai/vision/movement.py",
+      "size": 948,
+      "sha256": "27699c66df72d84599a10d08b4aca00188fd17906be407de5b65ea023cef502e"
+    },
+    {
+      "path": "build/lib/rehab_ai/web/__init__.py",
+      "size": 39,
+      "sha256": "078aa3f89bfd2db717cc0cda9a89918b249b8c68ba78320c9a2eed21cda40d0d"
+    },
+    {
+      "path": "build/lib/rehab_ai/web/app.py",
+      "size": 5450,
+      "sha256": "6eb801c90fc58767f74a50000d00fbefb1d28b7e21deeedd5374815a899c545f"
+    },
+    {
+      "path": "build/lib/rehab_ai/web/frontend/app.js",
+      "size": 10891,
+      "sha256": "fa5c191ca3c44a4d0928989a5b5bf9c15fa632b0ebf59616b27a8c0a25a82a4e"
+    },
+    {
+      "path": "build/lib/rehab_ai/web/frontend/index.html",
+      "size": 412,
+      "sha256": "0f96e8ee431388db8ae2d6178ea598252969e26106bef5b712dbfd87f91b8e93"
+    },
+    {
+      "path": "build/lib/rehab_ai/web/frontend/styles.css",
+      "size": 10787,
+      "sha256": "9e5bb99f3f7a55fcf6d8e733bb01484320f61af72c13e1268f3fb795e61860f1"
+    },
+    {
+      "path": "build/lib/rehab_ai/web/frontend/vendor/vue.global.prod.js",
+      "size": 157924,
+      "sha256": "c459ba7cc8db65c982589fa5d64c7ff478877e8e5b0fd75683207cec6a4e89e8"
+    },
+    {
+      "path": "config/default.yaml",
+      "size": 398,
+      "sha256": "7601c54f277cc3915d27d1e41b7dda02571975d92aa967fd792fe1a3b384f2ed"
+    },
+    {
+      "path": "data/README.md",
+      "size": 167,
+      "sha256": "06039716f14449eff3c6b474c0d8e9ff9ce7d3fec36fedf4dee11fbe4f96b571"
+    },
+    {
+      "path": "data/demo_sensor_sessions.h5",
+      "size": 73478,
+      "sha256": "19994b527928b5826c3f1f722bb2439275285d2ffd7090b2b5a171ba88d3b8a5"
+    },
+    {
+      "path": "dist/rehab_ai-0.9.0-py3-none-any.whl",
+      "size": 132857,
+      "sha256": "418a2215bdab3f6adaa4eb4417139c6faa91efd2c2e5dbbb1dafa829cd1957d6"
+    },
+    {
+      "path": "docker-compose.yml",
+      "size": 199,
+      "sha256": "10f5d96186a7439c6c02a4e637f55fbba496d354ce1d00d92af8d8b5669d8ba9"
+    },
+    {
+      "path": "docs/ARCHITECTURE_DECISIONS.md",
+      "size": 1872,
+      "sha256": "6e6b80ea2a6496cfa45aba0a4ccd4bd95af212ae8b6a83718f5b2fd0b1272ec8"
+    },
+    {
+      "path": "docs/PORTFOLIO_DEMO.md",
+      "size": 2479,
+      "sha256": "f5acca7800fba81aa53945ad25cfc2274b03b1743e1253598e8be4472f81bdc5"
+    },
+    {
+      "path": "docs/TECHNICAL_METHODS.md",
+      "size": 11791,
+      "sha256": "987e71b9a87848034936bd3f653e079f7465fb4bd82279b9f04c9fe6ee027cc0"
+    },
+    {
+      "path": "docs/architecture/ARCHITECTURE.md",
+      "size": 1149,
+      "sha256": "0d96b8f5d6e70c4af11e056290a84dc2343f36886aed438ab259abeb5e59f38d"
+    },
+    {
+      "path": "docs/architecture/DATA_CONTRACT.md",
+      "size": 1184,
+      "sha256": "b596641cc0ff921fe9f97897b3217694208b7eb2cf2eb6d87f9790841645ddf4"
+    },
+    {
+      "path": "docs/clinical/CLINICAL_SAFETY.md",
+      "size": 1846,
+      "sha256": "45016f060b8a731744026fccdfaf63f9d57ca32ff8c0ed4dd41ef916ea7b9d09"
+    },
+    {
+      "path": "docs/clinical/MODEL_CARDS.md",
+      "size": 1406,
+      "sha256": "a97f3b3a2665fd14dadc472bc9d50e5420840ba4c1e4f13b03006a6c91dfea56"
+    },
+    {
+      "path": "docs/governance/REHAB_AI_Repository_Constitution_v2.0.docx",
+      "size": 39310,
+      "sha256": "bdba0bc159434213a3ed40544a76700a19e892326aca57bd99f69ba41486531d"
+    },
+    {
+      "path": "docs/validation/VALIDATION_STRATEGY.md",
+      "size": 1693,
+      "sha256": "92d5ec16b3ffde27c9a0773171d0eea684322d4697ff832d01ab5fd06264120d"
+    },
+    {
+      "path": "docs/work_packages/EXECUTION_STATUS.md",
+      "size": 1276,
+      "sha256": "a041068a679038f7cc397a8dd2e932c7efcf7b6f5d9e185fe394b27f6031da27"
+    },
+    {
+      "path": "pyproject.toml",
+      "size": 897,
+      "sha256": "e58669d20d5aba18d137e2cbee3595396e32e87f600dfd03cd4234b8c30898fb"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "size": 54,
+      "sha256": "535e5960a1e86717b1ca87ef351f53bf995a0da213cd6ab27506d598ba22dd9b"
+    },
+    {
+      "path": "requirements.txt",
+      "size": 120,
+      "sha256": "80232d66be26e1cdc9964fb5cc371acd78f264a1b768c308d13002cb0fe6c83a"
+    },
+    {
+      "path": "scripts/phase1_diagnostics.py",
+      "size": 762,
+      "sha256": "6d3658e2790bb2823cc51c5e3c352723337ff39a3338ed2ea40e7d38bb00973e"
+    },
+    {
+      "path": "scripts/phase_apace_diagnostics.py",
+      "size": 3198,
+      "sha256": "a4e91f53a7a725cd44cf9d06a120bd4d2467f8b91d6542e8718a776964617c87"
+    },
+    {
+      "path": "scripts/phase_identity_diagnostics.py",
+      "size": 1763,
+      "sha256": "7d418b0573113254847960c75f96bda15107cec9b9f3ac5457989f0124be23df"
+    },
+    {
+      "path": "scripts/phase_v06_diagnostics.py",
+      "size": 1222,
+      "sha256": "3cc14689eab0356ea74695e55c12180192237b64c791d433b0927b3f4a580f4d"
+    },
+    {
+      "path": "scripts/phase_v08_diagnostics.py",
+      "size": 1936,
+      "sha256": "777a7a84cd274ecdb9b8cc25941ee106a4b5d189fcb6f2ab8a6489fb4f4f6595"
+    },
+    {
+      "path": "scripts/phase_v09_diagnostics.py",
+      "size": 1005,
+      "sha256": "e47d8aadc78826d02e6687cba179370f80eb23ef9766ef5ae07cfaf65ec638e7"
+    },
+    {
+      "path": "scripts/run_demo.py",
+      "size": 520,
+      "sha256": "85c3ad6f0ea5a7099c350892baa31d20ece7031734cb30826764eb5dbc9d4485"
+    },
+    {
+      "path": "scripts/run_policy_demo.py",
+      "size": 328,
+      "sha256": "8dcfe36e6be3a9eecbb24ef5c2efcf415540a7e7ede7c788939ecf1e4345bb9c"
+    },
+    {
+      "path": "scripts/run_unix.sh",
+      "size": 273,
+      "sha256": "05847cb898597dcbd0f5c269e12a3f51a18e272bc7b6825285e6e093e337f126"
+    },
+    {
+      "path": "scripts/run_windows.ps1",
+      "size": 5039,
+      "sha256": "c2317194206e43ca86af85102acd10d432ef3ba567fea077c1071c208690c2a5"
+    },
+    {
+      "path": "scripts/train_models.py",
+      "size": 123,
+      "sha256": "e48f9e303e8d7a5a80f5538c370ad879bdace0d0f6ccef822a796afd3465fa61"
+    },
+    {
+      "path": "scripts/windows_acceptance.ps1",
+      "size": 436,
+      "sha256": "b48fd9b32cb77e143aaca7d92d9e10bd9b88c6beb05d849521c6e6feb7d10030"
+    },
+    {
+      "path": "src/rehab_ai/__init__.py",
+      "size": 22,
+      "sha256": "1fd3564596fb35b79144f2cffd5d5f01198b357ada9e8ad533e38e63ef3fdae8"
+    },
+    {
+      "path": "src/rehab_ai/ai/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/ai/explain.py",
+      "size": 1767,
+      "sha256": "daef68f8aa41d91c43197a3592e6fd49f61c1f020ef35f7cab2b0cff84c436c4"
+    },
+    {
+      "path": "src/rehab_ai/ai/recovery.py",
+      "size": 1362,
+      "sha256": "cb85f1f1798b1426aec55be6fc3709019ae0482002498cc58a5be30efbebae39"
+    },
+    {
+      "path": "src/rehab_ai/ai/risk.py",
+      "size": 1584,
+      "sha256": "916078c5d9bc8663923a8bfe74f911d99d0aeede38146f30cba2cf4e226adda3"
+    },
+    {
+      "path": "src/rehab_ai/ai/trajectory.py",
+      "size": 1880,
+      "sha256": "81aae3309ad2c516b80679d940d92ea18d49be93acdbe610d64d304a35748707"
+    },
+    {
+      "path": "src/rehab_ai/apace/__init__.py",
+      "size": 190,
+      "sha256": "4098aec339fbbf3964d579a68b43965b5b95a936fd3133fad7670a860b1b2381"
+    },
+    {
+      "path": "src/rehab_ai/apace/algorithm.py",
+      "size": 14733,
+      "sha256": "bdf8a9fe95ffab46276699f336364faf0ae8d172a574cc1f4cdd6b7d8dc18bee"
+    },
+    {
+      "path": "src/rehab_ai/apace/benchmark.py",
+      "size": 3782,
+      "sha256": "2472f57da62974567a782ab5bbb9e515097a80abbb40b614e5bc055690426046"
+    },
+    {
+      "path": "src/rehab_ai/apace/integrated.py",
+      "size": 3877,
+      "sha256": "93f8a28b6060592a5a2728c4d05bea2f60ba58c6e71ea7f8ee4dedec6b6d6f2e"
+    },
+    {
+      "path": "src/rehab_ai/apace/population_stress.py",
+      "size": 1606,
+      "sha256": "09463303704321ea21e1b2fce060f8453ea8edc670f1538a3e2826fed0afc2fc"
+    },
+    {
+      "path": "src/rehab_ai/biomechanics/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/biomechanics/dynamics.py",
+      "size": 2421,
+      "sha256": "f557be9f8d9175d62ba594cb543451e2cef4b28896c6bc48f9ed576473442098"
+    },
+    {
+      "path": "src/rehab_ai/biomechanics/energetics.py",
+      "size": 1554,
+      "sha256": "770d01ae4e27b9f3deab40e4ee03d9e3dc77f80be31a1ccc69027b222bf475d7"
+    },
+    {
+      "path": "src/rehab_ai/biomechanics/gait.py",
+      "size": 1600,
+      "sha256": "9a57b0727ae998749ea8d9bd5593845237da7577108e11bf592398f8c675f58d"
+    },
+    {
+      "path": "src/rehab_ai/biomechanics/gait_events.py",
+      "size": 2708,
+      "sha256": "706e995ce044ec2e76326a77ce8b6c3a551f1f2e5b1bdd50abe289fa2c0010d5"
+    },
+    {
+      "path": "src/rehab_ai/biomechanics/signal_quality.py",
+      "size": 1237,
+      "sha256": "9a04c06313f1c344267c178f656c1b5b081a333e377732d044e494f1ba38e987"
+    },
+    {
+      "path": "src/rehab_ai/biomechanics/stability.py",
+      "size": 2082,
+      "sha256": "880e3f072b73afde924ac80d1564160e6982ca14b43cc7578359a7eb1bc4ea90"
+    },
+    {
+      "path": "src/rehab_ai/config.py",
+      "size": 1719,
+      "sha256": "206e5e434b0acc768b6e19637440ffc6ebddd8d4e61afc38e25fe6c5f426a211"
+    },
+    {
+      "path": "src/rehab_ai/control/__init__.py",
+      "size": 176,
+      "sha256": "b608f2718d55aa0a5690ac2dbec516b77d76f5dca8776c0a2bb194c519c5d23d"
+    },
+    {
+      "path": "src/rehab_ai/control/stochastic_mpc.py",
+      "size": 4152,
+      "sha256": "18e1e771e792d49f557e06a2f1663b2462c2ff308185d5114d7ee446da384e4d"
+    },
+    {
+      "path": "src/rehab_ai/data/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/data/ingestion.py",
+      "size": 2581,
+      "sha256": "a50c5c56db1a5fac31467d31b9b47643528d9d2023aca5c7489d63862fa9e1e7"
+    },
+    {
+      "path": "src/rehab_ai/data/synthetic.py",
+      "size": 2501,
+      "sha256": "e12c833dc9adf9b5cb61d4da6dddd63ae71bc1ece40511e387c27c5234f0ddbc"
+    },
+    {
+      "path": "src/rehab_ai/data/validation.py",
+      "size": 1399,
+      "sha256": "14f6e572ed7fb97323adebdae6a7077ece61aad4ddc7030b9928d2690522127f"
+    },
+    {
+      "path": "src/rehab_ai/decision/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/decision/engine.py",
+      "size": 1073,
+      "sha256": "3f9d5b4a177fcd83003d132f1626f513f4ffc008fc76b21ded2cffaf3b87d819"
+    },
+    {
+      "path": "src/rehab_ai/domain.py",
+      "size": 3563,
+      "sha256": "20ff3407cee6ce6b65827eb9c02a97fd56311dc433ad4a3cccfc853a95dc7e19"
+    },
+    {
+      "path": "src/rehab_ai/experiments/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/experiments/tracker.py",
+      "size": 730,
+      "sha256": "d76da61f40118c6e7a2840ce1efe8c43673b494950de2f9e64edee5401b35324"
+    },
+    {
+      "path": "src/rehab_ai/fusion/__init__.py",
+      "size": 41,
+      "sha256": "c76a8b0cb7c12cc7bbad2d51c30470561254f6c9064739a6c8b9945f69b36ddc"
+    },
+    {
+      "path": "src/rehab_ai/fusion/state_fusion.py",
+      "size": 2404,
+      "sha256": "46182b6ed9f3946994c5c6f2e7c86108a05c493492e5f17fff4daadd2aec2ea5"
+    },
+    {
+      "path": "src/rehab_ai/governance/__init__.py",
+      "size": 47,
+      "sha256": "7f9dbe58b44084f1615dda43b485d54b5fb84dfcb4d2b792367d98bdb4c818d3"
+    },
+    {
+      "path": "src/rehab_ai/governance/audit.py",
+      "size": 1210,
+      "sha256": "e9a1731758ddaa82d96ce0d76488d9081364b47df77441bc0ff62324df6b8dc8"
+    },
+    {
+      "path": "src/rehab_ai/ie/__init__.py",
+      "size": 216,
+      "sha256": "0087c02d12ac6cb37010df1a04f30e837893a4314bfe8ad69ff32d6125580185"
+    },
+    {
+      "path": "src/rehab_ai/ie/human_performance.py",
+      "size": 2444,
+      "sha256": "5281c64c219745723f0bdf23b33bce4f467b6e614cfa192831aa730d082be0df"
+    },
+    {
+      "path": "src/rehab_ai/learning/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/learning/feedback.py",
+      "size": 408,
+      "sha256": "150df6d61af3a5e835cbc777bf0a3022d5c4be170911626213529630c82fd229"
+    },
+    {
+      "path": "src/rehab_ai/ml/__init__.py",
+      "size": 58,
+      "sha256": "550b444bf57c71d6164c514bb30ff35f45a15df0349c29762213957f3638f9bf"
+    },
+    {
+      "path": "src/rehab_ai/ml/fall_risk_model.py",
+      "size": 3785,
+      "sha256": "56299646eaea0fb44c78ac890b123f8af149dec8396717b8ef4021fa57f18383"
+    },
+    {
+      "path": "src/rehab_ai/ml/phenotypes.py",
+      "size": 2559,
+      "sha256": "dccbde0909cad23b697455200ddebd77ff67012a5266fbbdceeeef8d58ce40f8"
+    },
+    {
+      "path": "src/rehab_ai/ml/safe_envelope.py",
+      "size": 4089,
+      "sha256": "7c9c08488dc7c2cd5b99664d0001f33b9b756274e303bb5ff1eabc68ff0afe68"
+    },
+    {
+      "path": "src/rehab_ai/ml/temporal_recovery.py",
+      "size": 3632,
+      "sha256": "5d3249e1e3b8e3916b3ed300a400ecd1bf677050822ac44af8eece4d6cce6480"
+    },
+    {
+      "path": "src/rehab_ai/ml/treatment_response.py",
+      "size": 3267,
+      "sha256": "fa94178694ee5a8716346425088befc76d3648dd8dadfbbf5b21acf445990b9b"
+    },
+    {
+      "path": "src/rehab_ai/observability/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/observability/metrics.py",
+      "size": 475,
+      "sha256": "7367b91d8605ae4b1ab98d65d3f32362abe21904e4cd6c4e5c7e9bdae077ed17"
+    },
+    {
+      "path": "src/rehab_ai/optimization/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/optimization/multiobjective.py",
+      "size": 1287,
+      "sha256": "400e1aadb4179201b1bbc7877e896d9d73cd64041cdbc5324f8e6d69ea316af6"
+    },
+    {
+      "path": "src/rehab_ai/optimization/therapy.py",
+      "size": 3292,
+      "sha256": "709a7225ff0380b1b5f96fdb545768c8e39ed1054c404e6536f51495b2a6b30c"
+    },
+    {
+      "path": "src/rehab_ai/persistence/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/persistence/repository.py",
+      "size": 4244,
+      "sha256": "6d03c9ee146779952834749254c260bffd931f0e04b11fc07bedbc67185722c5"
+    },
+    {
+      "path": "src/rehab_ai/registry/__init__.py",
+      "size": 31,
+      "sha256": "28d09d39c7eea119708ac282d003e4c27f14f8ec5c2b1556db18b950607a2c3d"
+    },
+    {
+      "path": "src/rehab_ai/registry/models.py",
+      "size": 426,
+      "sha256": "ee2d85984bb1dbeb73417bd3b84fcb529d3e4a8f15013bcbbc43caad9020f820"
+    },
+    {
+      "path": "src/rehab_ai/scheduling/__init__.py",
+      "size": 55,
+      "sha256": "5f11fbda590c0ed4f19bb244430b794ead4e6e3fd08f0000014bb58f2cb2961e"
+    },
+    {
+      "path": "src/rehab_ai/scheduling/therapy_schedule.py",
+      "size": 3051,
+      "sha256": "5fcd6351bc43026374b3649115c0616b3c752b8abc873e327717f1d4b9279e2f"
+    },
+    {
+      "path": "src/rehab_ai/sensing/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/sensing/wearable.py",
+      "size": 1272,
+      "sha256": "88f120a09b67161780ad1d01e9eec193563eba0a9399b7786db53660c2315615"
+    },
+    {
+      "path": "src/rehab_ai/services/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/services/apace_studio.py",
+      "size": 5907,
+      "sha256": "5780518b616ad2e247f2ef652a90fa503674a7299004ac9afc12066ba0004b3d"
+    },
+    {
+      "path": "src/rehab_ai/services/pipeline.py",
+      "size": 5949,
+      "sha256": "7c9dcb31c04a945bc440f254fc1ab214b305de44a3280bc786f88bada969d98a"
+    },
+    {
+      "path": "src/rehab_ai/services/policy_studio.py",
+      "size": 6365,
+      "sha256": "94b99dd6561bc4f006ba3c626ae03f1208c64a9ba0fd69ec7b86dfbdd8a6be77"
+    },
+    {
+      "path": "src/rehab_ai/simulation/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/simulation/engine.py",
+      "size": 1785,
+      "sha256": "c6952f039061096664b0982103b0235e8f72e8d9dedd355fd5986c560afdb5d1"
+    },
+    {
+      "path": "src/rehab_ai/state_estimation/__init__.py",
+      "size": 103,
+      "sha256": "9f5a05224ce0c0ca30fafc379a7e3e168259a20d00a9d3e2070d04fa1b9b43f3"
+    },
+    {
+      "path": "src/rehab_ai/state_estimation/ukf.py",
+      "size": 3110,
+      "sha256": "ef752189b1f9c5a6c0fd05c7f951139f02b98883c51d5217b8eb5b4407ee272b"
+    },
+    {
+      "path": "src/rehab_ai/storage/__init__.py",
+      "size": 160,
+      "sha256": "9d3d79470fabbaf9b24acdb17a02a04668c5c73bc2ac80cbd6f1c291ee81b970"
+    },
+    {
+      "path": "src/rehab_ai/storage/hdf5_archive.py",
+      "size": 2203,
+      "sha256": "650a18039b81042e0d83f4eeac939339f4585166113db17df5dad147bb8b1091"
+    },
+    {
+      "path": "src/rehab_ai/twin/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/twin/adaptive_episode.py",
+      "size": 3533,
+      "sha256": "b72e380457881865a552b418ba1fd631251aab8888277742e5a2c57ae9d5972b"
+    },
+    {
+      "path": "src/rehab_ai/twin/engine.py",
+      "size": 1140,
+      "sha256": "eb52e832da37e81606aefe02b5d95de640d2ee6526bb3fc75ad139ee966df426"
+    },
+    {
+      "path": "src/rehab_ai/twin/forecast.py",
+      "size": 2377,
+      "sha256": "c9688ed6e003ca77e1d08ef466c643ea4e9c0399b46be3583fccfd8fdc5e1eb0"
+    },
+    {
+      "path": "src/rehab_ai/vision/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/rehab_ai/vision/movement.py",
+      "size": 948,
+      "sha256": "27699c66df72d84599a10d08b4aca00188fd17906be407de5b65ea023cef502e"
+    },
+    {
+      "path": "src/rehab_ai/web/__init__.py",
+      "size": 39,
+      "sha256": "078aa3f89bfd2db717cc0cda9a89918b249b8c68ba78320c9a2eed21cda40d0d"
+    },
+    {
+      "path": "src/rehab_ai/web/app.py",
+      "size": 5450,
+      "sha256": "6eb801c90fc58767f74a50000d00fbefb1d28b7e21deeedd5374815a899c545f"
+    },
+    {
+      "path": "src/rehab_ai/web/frontend/app.js",
+      "size": 10891,
+      "sha256": "fa5c191ca3c44a4d0928989a5b5bf9c15fa632b0ebf59616b27a8c0a25a82a4e"
+    },
+    {
+      "path": "src/rehab_ai/web/frontend/index.html",
+      "size": 412,
+      "sha256": "0f96e8ee431388db8ae2d6178ea598252969e26106bef5b712dbfd87f91b8e93"
+    },
+    {
+      "path": "src/rehab_ai/web/frontend/styles.css",
+      "size": 10787,
+      "sha256": "9e5bb99f3f7a55fcf6d8e733bb01484320f61af72c13e1268f3fb795e61860f1"
+    },
+    {
+      "path": "src/rehab_ai/web/frontend/vendor/vue.global.prod.js",
+      "size": 157924,
+      "sha256": "c459ba7cc8db65c982589fa5d64c7ff478877e8e5b0fd75683207cec6a4e89e8"
+    },
+    {
+      "path": "src/rehab_ai.egg-info/PKG-INFO",
+      "size": 7037,
+      "sha256": "5dbf612192111745faa2c68bff34fdaee791c62fcc7eda3e722152f1f221a5e7"
+    },
+    {
+      "path": "src/rehab_ai.egg-info/SOURCES.txt",
+      "size": 3933,
+      "sha256": "75218d40c4b8283abef3306c318c8a2d75db04523cb5584c005d61738750cd12"
+    },
+    {
+      "path": "src/rehab_ai.egg-info/dependency_links.txt",
+      "size": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "src/rehab_ai.egg-info/requires.txt",
+      "size": 161,
+      "sha256": "93e42ef75f87fd85350c12177e2560ba2a03a78b464bdc03bdb81bf0fb4142f9"
+    },
+    {
+      "path": "src/rehab_ai.egg-info/top_level.txt",
+      "size": 9,
+      "sha256": "2b20ffe5140c0dd35c9f80e1bba50627449f9feb61d96da0cd3ef68dd15f36a3"
+    },
+    {
+      "path": "tests/test_ai.py",
+      "size": 825,
+      "sha256": "3c79cdd8c3e748ae9471d8c738538b65f4470ec717b8598d3750022ad93ed1ad"
+    },
+    {
+      "path": "tests/test_apace_algorithm.py",
+      "size": 3079,
+      "sha256": "4aa128fed336951de6fa6d06157f03751a263af92426b0c58948f7b8599cea14"
+    },
+    {
+      "path": "tests/test_apace_benchmark.py",
+      "size": 706,
+      "sha256": "e64b2e223770f91619555815d27345535c49b47e3bbd78e8d1194027cee59d04"
+    },
+    {
+      "path": "tests/test_apace_studio.py",
+      "size": 685,
+      "sha256": "cfb873d2ccb56f720e90faf5d6f01c7c3ca0747c00d399d8f9eac17981858c0d"
+    },
+    {
+      "path": "tests/test_audit.py",
+      "size": 482,
+      "sha256": "9119c96f2441df8449c87c3437cd2044b6caa2cb59f3cc63c555faed6c928eb3"
+    },
+    {
+      "path": "tests/test_biomechanics.py",
+      "size": 682,
+      "sha256": "103fa0f1e602c0b272d223dc5971424271c2f6f5b14c38f66f73b7255c13741e"
+    },
+    {
+      "path": "tests/test_biomechanics_dynamics.py",
+      "size": 850,
+      "sha256": "8d057e76941d5564e091a92c9350a7c7fcdcdbbce34e9f0cd984d37705762358"
+    },
+    {
+      "path": "tests/test_biomechanics_energetics.py",
+      "size": 557,
+      "sha256": "fab02cd20f36b55dc2c3bae51f216d7b2b6c899a11633528235abf4158acfde6"
+    },
+    {
+      "path": "tests/test_data_validation.py",
+      "size": 649,
+      "sha256": "cdc45462c442d64e3088917761baec89ffaa286cc4e4c14d3cf1bfa218c18500"
+    },
+    {
+      "path": "tests/test_feature_engines.py",
+      "size": 531,
+      "sha256": "e1ed5ace29a031a633323e2d78af582b18c5bab3002d9ead9f980efaacf15b2e"
+    },
+    {
+      "path": "tests/test_fusion.py",
+      "size": 661,
+      "sha256": "2889a50876724e5fd2071615b39e7e8dc87b8c63f5659723c43626af9c4c1af0"
+    },
+    {
+      "path": "tests/test_gait_event_fusion.py",
+      "size": 815,
+      "sha256": "166e30847839da6581ea6668f7b41724b1b8401a94baa011fe8c8c3209737eb5"
+    },
+    {
+      "path": "tests/test_governance.py",
+      "size": 457,
+      "sha256": "28e8f42f04cc88fb4f9d11c0eef0f60e024c7569a5c7184e02fe28ebe78a60cb"
+    },
+    {
+      "path": "tests/test_hdf5_archive.py",
+      "size": 776,
+      "sha256": "249c50f27d9ada6509a67141fea53370eb3f6986c94ae738ec6b5f77b531b02f"
+    },
+    {
+      "path": "tests/test_ingestion.py",
+      "size": 1087,
+      "sha256": "fe1431572d225b013c39769d910cfc910d677426ad66ddf6296bae74ecea0c63"
+    },
+    {
+      "path": "tests/test_integrated_adaptive_system.py",
+      "size": 1421,
+      "sha256": "a3a432415d16c30276e3d696f35f352ef352f9c2dd0bae1d4c32e6be42beaa63"
+    },
+    {
+      "path": "tests/test_ml_model.py",
+      "size": 916,
+      "sha256": "f13ffe60cfe8dea93b054194c41189060ecb609cf41dba138a336ac24af3dffa"
+    },
+    {
+      "path": "tests/test_multiobjective.py",
+      "size": 742,
+      "sha256": "89eb6efa45d5caabc4d6b7f2d2fd73ab03828f08171b13e8591ebf36f13d0b96"
+    },
+    {
+      "path": "tests/test_optimization.py",
+      "size": 1136,
+      "sha256": "c9d792a1a8d51aee8338f53d4604e251f8c9eee610801cb189bc9ace6ee6d286"
+    },
+    {
+      "path": "tests/test_phenotypes.py",
+      "size": 407,
+      "sha256": "5156c666f127827ba4b3219ab6cd49be0ba559152d06ebc396d10bfdad375558"
+    },
+    {
+      "path": "tests/test_pipeline.py",
+      "size": 626,
+      "sha256": "f02eb16244799b1d9fff62805c92c5e105733a37bb28954e3e2c948f60353957"
+    },
+    {
+      "path": "tests/test_policy_benchmark_api.py",
+      "size": 646,
+      "sha256": "e2916aac990542119c08c88643e797409fccae957313b8ec9dd2f40e267e1ecc"
+    },
+    {
+      "path": "tests/test_policy_studio.py",
+      "size": 691,
+      "sha256": "c60068af6962bf9b4691ba0ebedfe8bbd78f204c1f0c55fdabb1ee2b3ef7c82c"
+    },
+    {
+      "path": "tests/test_rehab_math_identity.py",
+      "size": 1594,
+      "sha256": "ae32b0c0a1e49108e46587c06ae012dcfe1b000d4a7ade662bc424575d8616f6"
+    },
+    {
+      "path": "tests/test_safe_envelope_ml.py",
+      "size": 792,
+      "sha256": "89a87e31ed4e23435340180132e71bc4059645c067bb1ea14b15d567dcb6f9b6"
+    },
+    {
+      "path": "tests/test_scheduling.py",
+      "size": 595,
+      "sha256": "dc46c273620897efe934e7eafec93349f5488a6338d17c441ee45ab6261d3b5f"
+    },
+    {
+      "path": "tests/test_scheduling_oracle.py",
+      "size": 701,
+      "sha256": "7adab52075bea1619b89bd5bf8e0d6a40290ab292a1c042c757085a00f5acc7c"
+    },
+    {
+      "path": "tests/test_signal_quality.py",
+      "size": 490,
+      "sha256": "be89022f8468c49b76e0a3c4a4361eac61af5e2c70805710492c9c5753948819"
+    },
+    {
+      "path": "tests/test_simulation.py",
+      "size": 986,
+      "sha256": "30583f467bab291a302fd0afdb6bf9cfca6ca47be07aac8c1b05f773a9b39d3f"
+    },
+    {
+      "path": "tests/test_starlette_web.py",
+      "size": 574,
+      "sha256": "568c6bccd56ff1d9d29cc732a9247393f755fa5753f97c22aec4d7579131575c"
+    },
+    {
+      "path": "tests/test_stochastic_mpc.py",
+      "size": 1086,
+      "sha256": "90ec2d08bd7350445d7ad68b126c8a75acf1c76bdc9b82422d7b9bd8be178d3b"
+    },
+    {
+      "path": "tests/test_temporal_recovery_ml.py",
+      "size": 388,
+      "sha256": "707a7e5fa5194571977f13cfbe319ee04e9784364ce4754a0843eb75c915bc61"
+    },
+    {
+      "path": "tests/test_trajectory_ai.py",
+      "size": 972,
+      "sha256": "125a524253bbfa449a538f82b892a6ea91b6f4a542c23c7325815a24a1113fdd"
+    },
+    {
+      "path": "tests/test_treatment_response_ml.py",
+      "size": 445,
+      "sha256": "f44c46212642c6dcedeab5803b565ab88e39e46d337decfb89f8c698ece416e9"
+    },
+    {
+      "path": "tests/test_twin.py",
+      "size": 621,
+      "sha256": "ed03001a9efc3ffc88a3c57aa34a19b9e32200b79440ca997ada01056b176ae4"
+    },
+    {
+      "path": "tests/test_twin_forecast.py",
+      "size": 1057,
+      "sha256": "683db6060398b1530ec2f2baed8911c4246acd2324372b6d8d54a76e1f732150"
+    }
+  ]
+}
