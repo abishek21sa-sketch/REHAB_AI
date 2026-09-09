@@ -11,4 +11,5 @@ services:
         value: 3.11.9
       - key: REHAB_CORS_ORIGINS
         value: "*"
-
+      - key: GEMINI_API_KEY
+        sync: false
