@@ -2,7 +2,7 @@
 
 ## Release status
 
-**REHAB_AI_PORTFOLIO_RC1** is a portfolio release candidate, not a production deployment certification.
+**REHAB_AI_PORTFOLIO_RELEASE** is a portfolio release candidate, not a production deployment certification.
 
 ## Decision-system identity
 

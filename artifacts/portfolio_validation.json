@@ -65,7 +65,7 @@
       "unsafe_rate": 0.0
     }
   },
-  "release": "REHAB_AI_PORTFOLIO_RC1",
+  "release": "REHAB_AI_PORTFOLIO_RELEASE",
   "seed": 2026,
   "status": "PASS",
   "validation_scope": "SYNTHETIC POLICY BENCHMARK"

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 import json
+import os
 import time
 import uuid
 
@@ -11,6 +12,7 @@ from starlette.responses import FileResponse, JSONResponse, PlainTextResponse, R
 from starlette.routing import Route, Mount
 from starlette.staticfiles import StaticFiles
 from starlette.middleware.base import BaseHTTPMiddleware
+from starlette.middleware.cors import CORSMiddleware
 
 from rehab_ai import __version__
 from rehab_ai.data.synthetic import generate_synthetic_session
@@ -257,3 +259,10 @@ class RequestContextMiddleware(BaseHTTPMiddleware):
 
 app = Starlette(debug=False, routes=routes)
 app.add_middleware(RequestContextMiddleware)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[x.strip() for x in os.getenv("REHAB_CORS_ORIGINS", "*").split(",") if x.strip()],
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)

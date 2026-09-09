@@ -10,6 +10,7 @@ src/rehab_ai.egg-info/dependency_links.txt
 src/rehab_ai.egg-info/requires.txt
 src/rehab_ai.egg-info/top_level.txt
 src/rehab_ai/ai/__init__.py
+src/rehab_ai/ai/copilot.py
 src/rehab_ai/ai/explain.py
 src/rehab_ai/ai/recovery.py
 src/rehab_ai/ai/risk.py
@@ -30,6 +31,7 @@ src/rehab_ai/biomechanics/gait_events.py
 src/rehab_ai/biomechanics/signal_quality.py
 src/rehab_ai/biomechanics/stability.py
 src/rehab_ai/control/__init__.py
+src/rehab_ai/control/signature_algorithm.py
 src/rehab_ai/control/stochastic_mpc.py
 src/rehab_ai/data/__init__.py
 src/rehab_ai/data/ingestion.py
@@ -88,13 +90,13 @@ src/rehab_ai/vision/movement.py
 src/rehab_ai/web/__init__.py
 src/rehab_ai/web/app.py
 src/rehab_ai/web/frontend/app.js
+src/rehab_ai/web/frontend/config.js
 src/rehab_ai/web/frontend/index.html
 src/rehab_ai/web/frontend/styles.css
 src/rehab_ai/web/frontend/vendor/vue.global.prod.js
 src/rehab_ai/web/sample_data/observed_landmark_session.csv
 src/rehab_ai/web/sample_data/observed_landmark_session_asymmetric.csv
 tests/test_ai.py
-tests/test_airlines15x_empirical.py
 tests/test_apace_algorithm.py
 tests/test_apace_benchmark.py
 tests/test_apace_studio.py
@@ -103,6 +105,7 @@ tests/test_biomechanics.py
 tests/test_biomechanics_dynamics.py
 tests/test_biomechanics_energetics.py
 tests/test_data_validation.py
+tests/test_empirical_evidence.py
 tests/test_feature_engines.py
 tests/test_fusion.py
 tests/test_gait_event_fusion.py
@@ -128,6 +131,7 @@ tests/test_safety_certificate_api.py
 tests/test_scheduling.py
 tests/test_scheduling_oracle.py
 tests/test_signal_quality.py
+tests/test_signature_algorithm.py
 tests/test_simulation.py
 tests/test_starlette_web.py
 tests/test_stochastic_mpc.py

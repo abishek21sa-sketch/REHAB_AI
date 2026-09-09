@@ -21,8 +21,8 @@
       "sha256": "cfebda6cc4ef8bf56e71d4da8d61f99b7f8ef54740341be0b32166c58f3373c3"
     },
     {
-      "path": "artifacts/airlines15x_validation.json",
-      "sha256": "4dad17abe463fa5d724098ee58b3e3060a83639ef4c3ddf7b7f7b78ca81fde9d"
+      "path": "artifacts/empirical_validation.json",
+      "sha256": "cfde78fb1980d69a6b326efe8f26f6ea1a8e917df24c7dbebbe66f68529fd56b"
     },
     {
       "path": "artifacts/final_depth_validation.json",
@@ -38,11 +38,11 @@
     },
     {
       "path": "artifacts/frontend_diversity.json",
-      "sha256": "700d77fc065fd1fbae0aeb2cf237dcf38f13485937f4b35a21713373b4440dac"
+      "sha256": "0c545f24a43a027935d96eb793d1ec6c7b295ce9c71919e6eb349112511aab6c"
     },
     {
       "path": "artifacts/portfolio_validation.json",
-      "sha256": "b31c3f80d2d0923a21949757d07dde6792059bf6575960ff2b2249eb6c088ff6"
+      "sha256": "f37a11b6abfb95e55dca070817313c53a6cc058d49e36a0ec4aa5cf4aae11550"
     },
     {
       "path": "artifacts/governance_standard_validation.json",
@@ -70,7 +70,7 @@
     },
     {
       "path": "src/rehab_ai/web/app.py",
-      "sha256": "2956dfffe7381287b789003f537f068a4d4fabb4ae953c3b5726240c8b800b59"
+      "sha256": "68f11938422d4caf2bacb5c7aab28022840c2f28130ac2d415096742a42aa523"
     }
   ],
   "claim_boundary": "Portfolio-grade analytical validation. External/domain validation and native dependency acceptance remain required where explicitly marked; autonomous operational execution is disabled.",

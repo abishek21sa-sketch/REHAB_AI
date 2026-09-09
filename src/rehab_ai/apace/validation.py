@@ -42,7 +42,7 @@ def build_apace_validation(*, patients: int = 10, horizon: int = 2, seed: int = 
         'oracle_zero_regret': abs(oracle['mean_regret_to_oracle']) <= 1e-12,
     }
     return {
-        'release': 'REHAB_AI_PORTFOLIO_RC1',
+        'release': 'REHAB_AI_PORTFOLIO_RELEASE',
         'validation_scope': suite.validation_scope,
         'patients': patients,
         'horizon': horizon,
