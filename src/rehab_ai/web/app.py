@@ -113,6 +113,31 @@ def benchmark(request: Request) -> JSONResponse:
         return JSONResponse({"error": type(exc).__name__, "detail": str(exc)}, status_code=422)
 
 
+_PUBLIC_DATA_MODULE = None
+
+def public_data_comparison(_: Request) -> JSONResponse:
+    # empirical/public_data_backbone.py lives at the repo root, a sibling of src/, not inside the
+    # installed rehab_ai package -- imported lazily, on first request, via an explicit path
+    # insert rather than a package import. This is the same real-data evidence backbone shared
+    # across every other project in this line of work (Kaizen, TRUST-DOE, Volterra, APEX, MQI);
+    # here it runs a nearest-centroid classifier over real UCI id 341 (Smartphone-Based
+    # Recognition of Human Activities and Postural Transitions) observations -- see
+    # empirical/public_data_config.json's "claim" field for what this evidence does and does not
+    # establish. It was wired to REHAB_AI's config and data on disk but never actually exposed
+    # from the running app until now.
+    global _PUBLIC_DATA_MODULE
+    try:
+        if _PUBLIC_DATA_MODULE is None:
+            import sys
+            empirical_dir = str(PROJECT_ROOT / "empirical")
+            if empirical_dir not in sys.path:
+                sys.path.insert(0, empirical_dir)
+            import public_data_backbone  # noqa: PLC0415
+            _PUBLIC_DATA_MODULE = public_data_backbone
+        return JSONResponse(_PUBLIC_DATA_MODULE.run_public_case())
+    except Exception as exc:
+        return JSONResponse({"error": type(exc).__name__, "detail": str(exc)}, status_code=422)
+
 _DEPTH_CACHE = None
 
 def computational_depth(_: Request) -> JSONResponse:
@@ -231,6 +256,7 @@ routes = [
     Route("/api/apace/demo", demo),
     Route("/api/apace/benchmark", benchmark),
     Route("/api/research/depth", computational_depth),
+    Route("/api/research/public-data-comparison", public_data_comparison),
     Route("/api/adaptive/episode", adaptive_episode),
     Route("/api/adaptive/population-stress", population_stress),
     Route("/api/assessment/gait", assessment_demo),

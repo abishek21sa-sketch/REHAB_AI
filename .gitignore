@@ -10,6 +10,9 @@ htmlcov/
 .DS_Store
 artifacts/runtime/
 
-# Large reproducible datasets stay local; use the documented fetch/build flow.
-data/raw/uci_motion/features.csv
+# data/raw/uci_motion/features.csv is committed on purpose: the checked-in copy is pre-trimmed
+# to exactly the 6000 rows / 50 columns empirical/public_data_backbone.py's _case_rehab() ever
+# reads (verified byte-identical output against the full 119MB download from UCI id 341 before
+# trimming), so at ~5.9MB it's well under GitHub's limits without needing a fetch step at deploy
+# time. Re-run scripts/fetch_public_data.py and re-trim if this ever needs refreshing.
 data/external/uci_341.zip
