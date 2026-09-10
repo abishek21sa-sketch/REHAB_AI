@@ -34,7 +34,22 @@ from rehab_ai.ai.copilot import build_response as build_copilot_response, status
 
 FRONTEND = Path(__file__).resolve().parent / "frontend"
 SAMPLE_DATA = Path(__file__).resolve().parent / "sample_data"
-PROJECT_ROOT = Path(__file__).resolve().parents[3]
+
+
+def _find_project_root() -> Path:
+    # buildCommand runs `pip install .` (not `-e .`), so on Render __file__ resolves inside a
+    # site-packages copy of rehab_ai, not the git checkout -- parents[3] from there lands nowhere
+    # near the real repo root, silently breaking every PROJECT_ROOT-relative path (empirical/,
+    # artifacts/). Render's startCommand runs with cwd already at the repo root, so prefer that
+    # when it looks right (confirmed by the empirical/ directory this module actually needs),
+    # falling back to the __file__-based guess for local dev layouts where cwd might differ.
+    cwd = Path.cwd()
+    if (cwd / "empirical").is_dir():
+        return cwd
+    return Path(__file__).resolve().parents[3]
+
+
+PROJECT_ROOT = _find_project_root()
 
 
 def health(_: Request) -> JSONResponse:
